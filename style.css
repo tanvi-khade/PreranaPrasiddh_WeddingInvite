@@ -43,7 +43,7 @@ body {
 #landing {
 	/* position: absolute; */
 	min-width: 100%;
-	min-height: 100vh;
+	min-height: 110vh;
 	text-align: center;
 	background-position: left;
 	background-image: url("C:\\Users\\ASUS\\source\\repos\\shweta\\invite_website\\landing.jpg");
@@ -95,6 +95,17 @@ h2 {
 	margin-bottom: 20px;
 	color: #a0522d;
 }
+
+section #events{
+	height: 85vh;
+}
+.btn-rsvp{
+	background-color: #d93b59;
+	margin: 3em 0 2em 0;
+	width: 13em;
+	height: 6em;
+	border-radius: 3em;
+}
 .event-grid {
 	padding: 3% 6%;
 	/* display: grid; */
@@ -102,27 +113,26 @@ h2 {
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 20px;
 	display: flex;
+	height: 70%;
 }
+
 .event-card {
 	/* background-color: #b7947e; */
-	border: 1px solid #eee;
+	/* border: 1px solid #eee; */
 	padding: 20px;
 	/* border-radius: 1530px; */
-	width: 17%;
-	height: 95%;
+	width: 24%;
+	height: 60%;
 	display: flow;
 	justify-content: center;
 	align-content: center;
 	text-align: center;
-}
-#eee{
-	height: 250px;
-	width: 250px;
-	background-color: #8b4513;
+	/* background-color: #eadac6; */
+	background-image: url('circle.png');
 	background-position: center;
-	background-size: contain;
-	background-image: url('logoWhite.png');
+	background-size: cover;
 }
+
 .event-card div{
 	width: 100%;
 	/* border: black; */
@@ -131,8 +141,26 @@ h2 {
 	justify-content: center;
 	align-content: center;
 	text-align: center;
-	background-color: #eadac6;
+	
 }
+.event-date{
+	display: block;
+	font-family: "Rochester", cursive;
+	font-size: 3.2em;
+}
+
+.event-date sup{
+	font-family:"Playfair Display", serif;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.event-text{
+	display: block;
+	font-family:"Playfair Display", serif;
+	font-size: 2.1em;
+}
+
 .dress-code {
 	background-color: #eadac6;
 	padding: 20px;
