@@ -1,0 +1,10 @@
+#fbf8f8 - [white landing]
+#f4f4f4 - [grey]
+#e2d9cc - [cream]
+#b7947e - [brown]
+#d93b59 - [red]
+#2e2e2e - [text] / pure white
+
+font
+Playfair Display [all content]
+Rochester [just event date number & event name, venue name]
