@@ -9,6 +9,7 @@ body {
 .section-heading-container{
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 
 .nav {
@@ -96,7 +97,7 @@ h2 {
 	color: #a0522d;
 }
 
-section #events{
+section #events,#dress-code{
 	height: 85vh;
 }
 .btn-rsvp{
@@ -162,10 +163,25 @@ section #events{
 }
 
 .dress-code {
-	background-color: #eadac6;
 	padding: 20px;
 	border-radius: 8px;
+	
 }
+.dress-code-row{
+	display: flex;
+	justify-content: space-evenly;
+}
+.dress-code-event{
+	max-width: 30%;
+	text-align: center;
+}
+.dress-code-event h1{
+	font-family: "Rochester", cursive;
+	text-align: center;
+	font-weight: 100;
+	margin-bottom: 0em;
+}
+
 footer {
 	text-align: center;
 	padding: 40px 20px;
