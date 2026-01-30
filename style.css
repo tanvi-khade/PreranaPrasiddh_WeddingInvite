@@ -14,11 +14,15 @@ body {
 }
 
 .nav {
-	width: 100%;
-	background-color: #b7947e;
+	/* width: 100%; */
+	background-color: #ebdacc;
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
+	height: 4em;
+	align-items: center;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 .nav-left,
 .nav-right {
