@@ -6,7 +6,7 @@ body {
 	min-width: 100%;
 }
 
-.section-heading-container{
+.section-heading-container {
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -83,13 +83,13 @@ body {
 	max-width: 100%;
 	height: auto;
 }
-.pill .book{
-    margin-top: -33px;
-    width: 50px;
+.pill .book {
+	margin-top: -33px;
+	width: 50px;
 }
 .pill p {
 	margin: 10px;
-    font-size: 14px;
+	font-size: 14px;
 }
 h2 {
 	font-size: 2em;
@@ -97,10 +97,11 @@ h2 {
 	color: #a0522d;
 }
 
-section #events,#dress-code{
+section #events,
+#dress-code {
 	height: 85vh;
 }
-.btn-rsvp{
+.btn-rsvp {
 	background-color: #d93b59;
 	margin: 3em 0 2em 0;
 	width: 13em;
@@ -129,12 +130,12 @@ section #events,#dress-code{
 	align-content: center;
 	text-align: center;
 	/* background-color: #eadac6; */
-	background-image: url('circle.png');
+	background-image: url("circle.png");
 	background-position: center;
 	background-size: cover;
 }
 
-.event-card div{
+.event-card div {
 	width: 100%;
 	/* border: black; */
 	height: 100%;
@@ -142,46 +143,67 @@ section #events,#dress-code{
 	justify-content: center;
 	align-content: center;
 	text-align: center;
-	
 }
-.event-date{
+.event-date {
 	display: block;
 	font-family: "Rochester", cursive;
 	font-size: 3.2em;
 }
 
-.event-date sup{
-	font-family:"Playfair Display", serif;
+.event-date sup {
+	font-family: "Playfair Display", serif;
 	font-size: 1em;
 	font-weight: bold;
 }
 
-.event-text{
+.event-text {
 	display: block;
-	font-family:"Playfair Display", serif;
+	font-family: "Playfair Display", serif;
 	font-size: 2.1em;
 }
 
 .dress-code {
 	padding: 20px;
 	border-radius: 8px;
-	
 }
-.dress-code-row{
+.dress-code-row {
 	display: flex;
 	justify-content: space-evenly;
 }
-.dress-code-event{
+.dress-code-event {
 	max-width: 30%;
 	text-align: center;
 }
-.dress-code-event h1{
+.dress-code-event h1 {
 	font-family: "Rochester", cursive;
 	text-align: center;
 	font-weight: 100;
 	margin-bottom: 0em;
 }
 
+#venue {
+	background-color: #eadac6;
+	min-height: 100vh;
+}
+.venue-content h1 {
+	font-family: "Rochester", cursive;
+	font-weight: 100;
+}
+.venue-content {
+	text-align: center;
+	font-weight: 100;
+}
+#venue-map{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#venue-map iframe{
+	border: 0;
+	width: 80%;
+	height: 60vh;
+
+}
 footer {
 	text-align: center;
 	padding: 40px 20px;
