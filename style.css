@@ -1,7 +1,8 @@
 body {
 	margin: 0px;
 	font-family: "Playfair Display", serif;
-	background-color: #fffaf5;
+	background-color: #eadac6;
+	/* background-color: red; */
 	color: #333;
 	min-width: 100%;
 }
@@ -37,9 +38,6 @@ body {
 	text-align: end;
 }
 
-.nav-item a:hover {
-	background-color: #111111;
-}
 
 #landing {
 	/* position: absolute; */
@@ -99,6 +97,8 @@ h2 {
 
 section #events,
 #dress-code {
+	background-color: #fffaf5;
+
 	height: 85vh;
 }
 .btn-rsvp {
@@ -193,27 +193,89 @@ section #events,
 	text-align: center;
 	font-weight: 100;
 }
-#venue-map{
+#venue-map {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
-#venue-map iframe{
+#venue-map iframe {
 	border: 0;
 	width: 80%;
 	height: 60vh;
-
 }
+#guide {
+	background-color: #eadac6;
+}
+.guide-content {
+	padding: 0 5%;
+	width: 65%;
+}
+#flower-container {
+	background-color: #fffaf5;
+}
+.box {
+	/* margin-top: -276px; */
+	/* height: 100px; */
+	/* min-height: 170px; */
+	background-color: #fffaf5;
+	--mask:
+		radial-gradient(223.06px at 50% 312.8px, #000 99%, #0000 101%)
+			calc(50% - 272px) 0/544px 100%,
+		radial-gradient(223.06px at 50% -176.8px, #0000 99%, #000 101%) 50%
+			136px/544px 100% repeat-x;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+}
+#lavendar {
+	max-width: 100%;
+}
+#rsvp {
+	padding-top: 250px;
+	margin-top: -348px;
+	background-color: #f4f4f4;
+	min-height: 60vh;
+	padding-left: 5%;
+	padding-bottom: 2em;
+	/* width: 100%; */
+}
+#rsvp h2 {
+	color: #d93b59;
+	margin-top: 0;
+}
+#rsvp-content {
+	display: flex;
+}
+#rsvp-yap {
+	max-width: 40%;
+	padding: auto 5em;
+	font-size: x-large;
+}
+#rsvp-form-wrapper {
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-top: 2em;
+	text-align: center;
+}
+/* #rsvp-form-wrapper form {
+	margin-left: auto;
+	margin-right: auto;
+} */
 footer {
 	text-align: center;
 	padding: 40px 20px;
 	font-size: 0.9em;
 	color: #777;
 }
+#rsvp-form {
+	margin-left: auto;
+	margin-right: auto;
+}
 input,
 textarea {
+	font-size: larger;
+	font-family: "Playfair Display", serif;
 	width: 50%;
-	padding: 10px;
+	padding: 1em;
 	margin: 10px auto;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -226,6 +288,20 @@ button {
 	border-radius: 4px;
 	cursor: pointer;
 }
-button:hover {
-	background-color: #8b4513;
+#rsvp-btn {
+	display: block;
+	background-color: #fbf8f8;
+	color: #d93b59;
+	padding: 1em;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: large;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer {
+	margin: 2em;
+	
+	color: #000;
 }
