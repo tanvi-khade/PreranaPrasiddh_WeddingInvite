@@ -52,8 +52,10 @@ body {
 	min-height: 115vh;
 	max-width: 45%;
 	--mask:
-    radial-gradient(121.38px at calc(100% - 171.6px) 50%,#000 99%,#0000 101%) 0 calc(50% - 176px)/100% 352px,
-    radial-gradient(121.38px at calc(100% + 83.6px) 50%,#0000 99%,#000 101%) calc(100% - 88px) 50%/100% 352px repeat-y;
+		radial-gradient(121.38px at calc(100% - 171.6px) 50%, #000 99%, #0000 101%)
+			0 calc(50% - 176px)/100% 352px,
+		radial-gradient(121.38px at calc(100% + 83.6px) 50%, #0000 99%, #000 101%)
+			calc(100% - 88px) 50%/100% 352px repeat-y;
 	-webkit-mask: var(--mask);
 	mask: var(--mask);
 	rotate: 16deg;
@@ -322,11 +324,54 @@ button {
 	margin-left: auto;
 	margin-right: auto;
 }
-#rsvp-btn-text{
-font-size: x-large;
+#rsvp-btn-text {
+	font-size: x-large;
+}
+
+.event-popup {
+	top: 50%;
+	left: 25%;
+	right: 20%;
+
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 10; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.event-popup-content {
+	background-color: #ebdacc;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 3em 5em;
+	border: 1px solid #888;
+	width: 50%; /* Could be more or less, depending on screen size */
+	border-radius: 1em;
+}
+
+.close {
+	color: black;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+.event-popup-content .section-heading-container h2 {
+	font-family: "Rochester", cursive;
 }
 footer {
 	margin: 2em;
-	
+
 	color: #000;
 }

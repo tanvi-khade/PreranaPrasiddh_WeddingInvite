@@ -17,6 +17,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
 	</head>
 	<body>
 		<div class="nav">
@@ -73,9 +74,7 @@
 				</p>
 			</div>
 		</section>
-			<div class="side-wave"></div>
-
-
+		<div class="side-wave"></div>
 		<section>
 			<div id="events">
 				<div class="section-heading-container">
@@ -91,16 +90,16 @@
 					</span>
 				</div>
 				<div class="event-grid">
-					<div class="event-card">
+					<div class="event-card" onclick="openPopup('23dec')">
 						<span class="event-date">23<sup>rd</sup></span>
 						<span class="event-text">December</span>
 						<span class="event-text">Events</span>
 					</div>
-					<div id="eee" class="event-card">
+					<div id="eee" class="event-card" onclick="openPopup('24dec')">
 						<span>24th December</span>
 						<p>Sangeet</p>
 					</div>
-					<div class="event-card">
+					<div class="event-card" onclick="openPopup('25dec')">
 						<div style="border-radius: 300px">
 							<span class="date">25<sup>th</sup> December</span>
 							<p>Mohurat</p>
@@ -292,18 +291,22 @@
 						beautiful new chapter with your presence and blessings. We can’t
 						wait to celebrate love, laughter and forever with you.
 					</p>
-					<p style="font-weight: bold; font-style: italic;">
+					<p style="font-weight: bold; font-style: italic">
 						Your love, support and good wishes are the greatest gifts we could
 						ask for, so we kindly request no boxed gifts.
 					</p>
 				</span>
 				<span id="rsvp-form-wrapper">
 					<form id="rsvp-form">
-						<input  type="text" placeholder="* Your Name" required />
+						<input type="text" placeholder="* Your Name" required />
 						<input type="email" placeholder="* Your Email" required />
 						<input type="text" placeholder="* Your Contact Detail" required />
-						<input type="number" placeholder="* No of Guests attending" required></textarea>
-						<input placeholder="* Will be attending on?" required></textarea>
+						<input
+							type="number"
+							placeholder="* No of Guests attending"
+							required
+						/>
+						<input type="text" placeholder="* Will be attending on?" required />
 						<button id="rsvp-btn" type="submit">Submit</button>
 					</form>
 				</span>
@@ -311,8 +314,115 @@
 		</section>
 
 		<footer>
-			<span style="font-size: large;">With Love & Gratitude<br /></span>
-			<span style="font-size: xx-large; font-weight: bold;">Atreya & Chakraborty<br/> Family</span>
+			<span style="font-size: large">With Love & Gratitude<br /></span>
+			<span style="font-size: xx-large; font-weight: bold"
+				>Atreya & Chakraborty<br />
+				Family</span
+			>
 		</footer>
+
+		<div id="23dec" class="event-popup">
+			<div class="event-popup-content">
+				<span class="close" onclick="closePopup('23dec')">&times;</span>
+				<div class="section-heading-container">
+					<span>
+						<h2>Check-in and Social Hour</h2>
+					</span>
+				</div>
+				<p>
+					Check-in will begin at <b>3:30 PM</b> and guests will be shown their
+					rooms as well as have a chance to explore the resort. We are excited
+					to welcome everyone to a fun-filled experience and start the
+					celebration off on a joyous note!!
+				</p>
+				<div class="section-heading-container">
+					<span><h2>Mehendi</h2></span>
+				</div>
+				<p>
+					A festive pre-wedding event, typically for family and friends, filled
+					with music, dancing, and food. Mehendi is believed to bring good luck,
+					wealth and positive spirits to the new marriage!!! Fun fact: it is
+					said that a darker henna stain is traditionally seen as a sign of a
+					deeper love and a stronger relationship with the husband.
+				</p>
+			</div>
+		</div>
+
+		<div id="24dec" class="event-popup">
+			<div class="event-popup-content">
+				<span class="close" onclick="closePopup('24dec')">&times;</span>
+				<div class="section-heading-container">
+					<span>
+						<h2>Gaye Holud</h2>
+					</span>
+				</div>
+				<p>
+					A traditional Bengali pre-wedding ritual symbolizing purification,
+					beauty and blessings. Turmeric (holud) paste is applied to groom and
+					bride to cleanse the skin, preceded by a ceremony to repel negative
+					energy before the wedding. It’s a joyous event where family and
+					friends unite through shared rituals, music and songs.
+				</p>
+				<div class="section-heading-container">
+					<span><h2>Mamera</h2></span>
+				</div>
+				<p>
+					A traditional Gujarati pre-wedding ritual where the Groom’s (or Bride)
+					maternal family brings gifts, sweets and fruits in decorated trays,
+					featuring dhol, music and garba…This is a heartfelt, emotional gesture
+					showing maternal side’s love, support and best wishes for the new
+					journey!
+				</p>
+				<div class="section-heading-container">
+					<span><h2>Sangeet</h2></span>
+				</div>
+				<p>
+					Kickstart of festivities through music, song and dance, bridging both
+					families in joyous celebration before the main ceremony. It allows
+					both families to celebrate together in a fun & relaxed environment,
+					reinforcing familial ties. It’s a vibrant display of Indian culture,
+					with traditional songs & dances.
+				</p>
+			</div>
+		</div>
+
+		<div id="25dec" class="event-popup">
+			<div class="event-popup-content">
+				<span class="close" onclick="closePopup('25dec')">&times;</span>
+				<div class="section-heading-container">
+					<span>
+						<h2>Baraat</h2>
+					</span>
+				</div>
+				<p>
+					The Baraat is the groom's joyous wedding procession, symbolizing his
+					journey to claim his bride, marked by music, dancing and vibrant
+					celebration as friends and family escort the groom, often on a
+					decorated horse or vehicle, to the wedding venue for a grand welcome
+					by the bride's side. It signifies the groom's readiness and the
+					collective happiness and pride of both families in uniting.
+				</p>
+				<div class="section-heading-container">
+					<span><h2>Muhuratam</h2></span>
+				</div>
+				<p>
+					Muhūrat - literally meaning “auspicious moment”, is the most sacred
+					and significant time window on the wedding day. It is during this
+					divinely chosen period that key rituals such as Jeerige Bella, Kanyā
+					Dānam, Kankana Bandhana and Maṅgalya Dhāraṇa are performed. Jeerige
+					Bella symbolizes the couple’s commitment to live in harmony, united in
+					mind and spirit. Kanyā Dānam marks the deeply emotional moment when
+					the bride’s father places his daughter’s hand into the groom’s, as the
+					groom vows to care for her for the rest of their lives. During this
+					ritual, elders pour sacred water and milk over the deity’s idol placed
+					on a coconut held jointly by the bride and groom. This act represents
+					the collective blessings of the family for a long, prosperous and
+					harmonious married life. Maṅgalya Dhāraṇa follows immediately after
+					and the entire sequence concludes gracefully with the sacred steps of
+					Saptapadi, symbolizing the couple’s journey forward as partners in
+					life.
+				</p>
+			</div>
+		</div>
 	</body>
 </html>
