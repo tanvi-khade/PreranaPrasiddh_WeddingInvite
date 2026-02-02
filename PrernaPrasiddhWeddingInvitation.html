@@ -35,18 +35,23 @@
 		<section id="landing">
 			<div class="pill">
 				<div class="svg-container">
-					<svg viewBox="0 0 300 85">
-						<!-- Define the curved path the text will follow. Set fill="none" to hide the path line. -->
-						<defs>
-							<path id="semiCircle" d="M-11 180 a110 85 0 0 1 320 -15"></path>
-						</defs>
+					<svg viewBox="0 0 300 85" width="100%" height="auto">
+						<g transform="translate(0, 25)">
+							<!-- Define the curved path the text will follow. Set fill="none" to hide the path line. -->
+							<defs>
+								<path
+									id="semiCircle"
+									d="M-11 180 a150 150 0 0 1 320 -15"
+								></path>
+							</defs>
 
-						<!-- Curved text along the semi-circle -->
-						<text font-size="24" fill="#e2d9cc" text-anchor="middle">
-							<textPath href="#semiCircle" startOffset="53%">
-								We're getting married!
-							</textPath>
-						</text>
+							<!-- Curved text along the semi-circle -->
+							<text font-size="24" fill="#e2d9cc" text-anchor="middle">
+								<textPath href="#semiCircle" startOffset="53%">
+									We're getting married!
+								</textPath>
+							</text>
+						</g>
 					</svg>
 				</div>
 				<img src="book.svg" class="book" alt="couple.jpg" />
