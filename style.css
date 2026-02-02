@@ -47,9 +47,9 @@ body {
 	background-color: #fdf8f9;
 	position: relative;
 	z-index: 2;
-	margin-top: -121vh;
+	margin-top: -133vh;
 	margin-left: -10vw;
-	min-height: 115vh;
+	min-height: 119vh;
 	max-width: 45%;
 	--mask:
 		radial-gradient(121.38px at calc(100% - 171.6px) 50%, #000 99%, #0000 101%)
@@ -64,10 +64,10 @@ body {
 #landing {
 	/* position: absolute; */
 	min-width: 100%;
-	min-height: 110vh;
+	min-height: 120vh;
 	text-align: center;
 	background-position: left;
-	background-image: url("C:\\Users\\ASUS\\source\\repos\\shweta\\invite_website\\landing.jpg");
+	background-image: url("C:\\Users\\ASUS\\source\\repos\\shweta\\invite_website\\couple.jpeg");
 	overflow: clip;
 }
 .pill {
@@ -128,16 +128,16 @@ section #events,
 .btn-rsvp {
 	background-color: #d93b59;
 	margin: 3em 0 2em 0;
-	width: 13em;
+	width: 11em;
 	height: 6em;
 	border-radius: 3em;
 }
 .event-grid {
-	padding: 3% 6%;
+	padding: 3% 7%;
 	/* display: grid; */
 	justify-content: space-around;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 20px;
+	gap: -11px;
 	display: flex;
 	height: 70%;
 }
@@ -147,14 +147,14 @@ section #events,
 	/* border: 1px solid #eee; */
 	padding: 20px;
 	/* border-radius: 1530px; */
-	width: 24%;
-	height: 60%;
+	width: 19%;
+	height: 51%;
 	display: flow;
 	justify-content: center;
 	align-content: center;
 	text-align: center;
 	/* background-color: #eadac6; */
-	background-image: url("circle.png");
+	background-image: url("events-circle2.svg");
 	background-position: center;
 	background-size: cover;
 }
@@ -242,11 +242,19 @@ section #events,
 	/* height: 100px; */
 	/* min-height: 170px; */
 	background-color: #fffaf5;
-	--mask:
+	/* --mask:
 		radial-gradient(223.06px at 50% 312.8px, #000 99%, #0000 101%)
 			calc(50% - 272px) 0/544px 100%,
 		radial-gradient(223.06px at 50% -176.8px, #0000 99%, #000 101%) 50%
 			136px/544px 100% repeat-x;
+	-webkit-mask: var(--mask);
+	mask: var(--mask); */
+
+	--mask:
+		radial-gradient(105.02px at calc(100% - 142.8px) 50%, #000 99%, #0000 101%)
+			0 calc(50% - 102px)/100% 204px,
+		radial-gradient(105.02px at calc(100% + 91.8px) 50%, #0000 99%, #000 101%)
+			calc(100% - 51px) 50%/100% 204px repeat-y;
 	-webkit-mask: var(--mask);
 	mask: var(--mask);
 }
@@ -323,9 +331,12 @@ button {
 	font-size: large;
 	margin-left: auto;
 	margin-right: auto;
+	
 }
 #rsvp-btn-text {
-	font-size: x-large;
+	font-size: xx-large;
+	font-family: "Playfair Display", serif;
+	font-weight: bold;
 }
 
 .event-popup {
