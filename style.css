@@ -1,7 +1,7 @@
 body {
 	margin: 0px;
 	font-family: "Playfair Display", serif;
-	background-color: #eadac6;
+	background-color: #ebdacc;
 	/* background-color: red; */
 	color: #333;
 	min-width: 100%;
@@ -153,7 +153,7 @@ section #events,
 	justify-content: center;
 	align-content: center;
 	text-align: center;
-	/* background-color: #eadac6; */
+	/* background-color: #ebdacc; */
 	background-image: url("events-circle2.svg");
 	background-position: center;
 	background-size: cover;
@@ -206,7 +206,7 @@ section #events,
 }
 
 #venue {
-	background-color: #eadac6;
+	background-color: #ebdacc;
 	min-height: 100vh;
 }
 .venue-content h1 {
@@ -228,7 +228,7 @@ section #events,
 	height: 60vh;
 }
 #guide {
-	background-color: #eadac6;
+	background-color: #ebdacc;
 }
 .guide-content {
 	padding: 0 5%;
