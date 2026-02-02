@@ -51,14 +51,22 @@ body {
 	margin-left: -10vw;
 	min-height: 119vh;
 	max-width: 45%;
-	--mask:
+	/* --mask:
 		radial-gradient(121.38px at calc(100% - 171.6px) 50%, #000 99%, #0000 101%)
 			0 calc(50% - 176px)/100% 352px,
 		radial-gradient(121.38px at calc(100% + 83.6px) 50%, #0000 99%, #000 101%)
 			calc(100% - 88px) 50%/100% 352px repeat-y;
 	-webkit-mask: var(--mask);
 	mask: var(--mask);
-	rotate: 16deg;
+	rotate: 16deg; */
+
+	--mask:
+		radial-gradient(105.02px at calc(100% - 142.8px) 50%, #000 99%, #0000 101%)
+			0 calc(50% - 102px)/100% 204px,
+		radial-gradient(105.02px at calc(100% + 91.8px) 50%, #0000 99%, #000 101%)
+			calc(100% - 51px) 50%/100% 204px repeat-y;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
 }
 
 #landing {
@@ -114,7 +122,7 @@ body {
 	font-size: 14px;
 }
 h2 {
-	font-size: 2em;
+	/* font-size: 2em; */
 	margin-bottom: 20px;
 	color: #a0522d;
 }
@@ -127,7 +135,7 @@ section #events,
 }
 .btn-rsvp {
 	background-color: #d93b59;
-	margin: 3em 0 2em 0;
+	margin: 5em 0 2em 0;
 	width: 11em;
 	height: 6em;
 	border-radius: 3em;
@@ -171,19 +179,20 @@ section #events,
 .event-date {
 	display: block;
 	font-family: "Rochester", cursive;
-	font-size: 3.2em;
+	font-size: 4.2em;
 }
 
 .event-date sup {
 	font-family: "Playfair Display", serif;
-	font-size: 1em;
+	font-size: 0.5em;
 	font-weight: bold;
 }
 
 .event-text {
 	display: block;
 	font-family: "Playfair Display", serif;
-	font-size: 2.1em;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 .dress-code {
@@ -208,6 +217,10 @@ section #events,
 #venue {
 	background-color: #ebdacc;
 	min-height: 100vh;
+}
+
+#venue .section-heading-container {
+	margin-top: 2em;
 }
 .venue-content h1 {
 	font-family: "Rochester", cursive;
@@ -242,28 +255,21 @@ section #events,
 	/* height: 100px; */
 	/* min-height: 170px; */
 	background-color: #fffaf5;
-	/* --mask:
+	--mask:
 		radial-gradient(223.06px at 50% 312.8px, #000 99%, #0000 101%)
 			calc(50% - 272px) 0/544px 100%,
 		radial-gradient(223.06px at 50% -176.8px, #0000 99%, #000 101%) 50%
 			136px/544px 100% repeat-x;
 	-webkit-mask: var(--mask);
-	mask: var(--mask); */
-
-	--mask:
-		radial-gradient(105.02px at calc(100% - 142.8px) 50%, #000 99%, #0000 101%)
-			0 calc(50% - 102px)/100% 204px,
-		radial-gradient(105.02px at calc(100% + 91.8px) 50%, #0000 99%, #000 101%)
-			calc(100% - 51px) 50%/100% 204px repeat-y;
-	-webkit-mask: var(--mask);
 	mask: var(--mask);
 }
 #lavendar {
 	max-width: 100%;
+	margin-top: 2em;
 }
 #rsvp {
 	padding-top: 250px;
-	margin-top: -348px;
+	margin-top: -186px;
 	background-color: #f4f4f4;
 	min-height: 60vh;
 	padding-left: 5%;
@@ -276,11 +282,12 @@ section #events,
 }
 #rsvp-content {
 	display: flex;
+	padding-top: 2em;
 }
 #rsvp-yap {
-	max-width: 40%;
-	padding: auto 5em;
-	font-size: x-large;
+	width: 50%;
+	padding-top: 2em;
+	padding-left: 4em;
 }
 #rsvp-form-wrapper {
 	padding-left: 2em;
@@ -304,7 +311,7 @@ footer {
 }
 input,
 textarea {
-	font-size: larger;
+	font-size: medium;
 	font-family: "Playfair Display", serif;
 	width: 50%;
 	padding: 1em;
@@ -331,12 +338,16 @@ button {
 	font-size: large;
 	margin-left: auto;
 	margin-right: auto;
-	
+	margin-top: 1em;
 }
 #rsvp-btn-text {
 	font-size: xx-large;
 	font-family: "Playfair Display", serif;
 	font-weight: bold;
+}
+#rsvp-btn:hover{
+	background-color:#d93b59 ;
+	color: #fbf8f8;
 }
 
 .event-popup {
