@@ -27,7 +27,7 @@
 			<div class="nav-right">
 				<span class="nav-item"><a href="#events">Events</a></span>
 				<span class="nav-item"><a href="#venue">Venue</a></span>
-				<span class="nav-item"><a href="#guid">Guide</a></span>
+				<span class="nav-item"><a href="#guide">Guide</a></span>
 				<span class="nav-item"><a href="#rsvp">RSVP</a></span>
 			</div>
 		</div>
@@ -297,17 +297,38 @@
 					</p>
 				</span>
 				<span id="rsvp-form-wrapper">
-					<form id="rsvp-form">
-						<input type="text" placeholder="* Your Name" required />
-						<input type="email" placeholder="* Your Email" required />
-						<input type="text" placeholder="* Your Contact Detail" required />
+					<form
+						id="rsvp-form"
+						action="https://formspree.io/f/mojleqyq"
+						method="POST"
+					>
+						<input name="name" type="text" placeholder="* Your Name" required />
 						<input
+							name="email"
+							type="email"
+							placeholder="* Your Email"
+							required
+						/>
+						<input
+							name="contact"
+							type="text"
+							placeholder="* Your Contact Detail"
+							required
+						/>
+						<input
+							name="guests"
 							type="number"
 							placeholder="* No of Guests attending"
 							required
 						/>
-						<input type="text" placeholder="* Will be attending on?" required />
+						<input
+							name="attendingOn"
+							type="text"
+							placeholder="* Will be attending on?"
+							required
+						/>
 						<button id="rsvp-btn" type="submit">Submit</button>
+						<p id="my-form-status"></p>
 					</form>
 				</span>
 			</div>
