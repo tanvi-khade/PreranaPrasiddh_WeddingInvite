@@ -238,6 +238,11 @@ section #events,
 	text-align: center;
 	font-weight: 100;
 }
+
+#venue-details {
+	font-style: italic;
+	margin: 2em 0em 2.7em;
+}
 #venue-map {
 	width: 100%;
 	display: flex;
