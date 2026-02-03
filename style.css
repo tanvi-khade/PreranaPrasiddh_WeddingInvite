@@ -5,6 +5,7 @@ body {
 	/* background-color: red; */
 	color: #333;
 	min-width: 100%;
+	overflow-x: hidden;
 }
 
 .section-heading-container {
@@ -261,6 +262,25 @@ section #events,
 	padding: 20px;
 	border-radius: 8px;
 }
+
+#dress-code-bottom-left{
+	height: 25em;
+	width:40em;
+	position: absolute;
+	margin-top: -14em;
+	z-index: 99;
+	margin-left: -9em;
+}
+
+#dress-code-bottom-right{
+	height: 25em;
+	width:40em;
+	position: absolute;
+	margin-top: -10em;
+	z-index: 5;
+	margin-left: 61vw;
+}
+
 .dress-code-row {
 	display: flex;
 	justify-content: space-evenly;
@@ -279,6 +299,15 @@ section #events,
 #venue {
 	background-color: #ebdacc;
 	min-height: 100vh;
+	z-index: 6;
+}
+
+#venue-top{
+	width: 30%;
+	height: 25%;
+	position: absolute;
+	left: 70%;
+	margin-top: -5em;
 }
 
 #venue .section-heading-container {
