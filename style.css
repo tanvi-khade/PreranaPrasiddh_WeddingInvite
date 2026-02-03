@@ -36,12 +36,12 @@ body {
 	padding: 8px 16px;
 	font-size: 22px;
 }
-.nav-item img{
+.nav-item img {
 	max-width: 2em;
 	max-height: 2em;
 	padding: 0px;
 }
-#nav-logo{
+#nav-logo {
 	padding-right: 0px;
 }
 .nav-item a {
@@ -67,8 +67,7 @@ body {
 	-webkit-mask: var(--mask);
 	mask: var(--mask);
 	rotate: 16deg; */
-
-	--mask:
+	/* --mask:
 		radial-gradient(105.02px at calc(100% - 142.8px) 50%, #000 99%, #0000 101%)
 			0 calc(50% - 102px)/100% 204px,
 		radial-gradient(105.02px at calc(100% + 91.8px) 50%, #0000 99%, #000 101%)
@@ -145,6 +144,18 @@ h2 {
 	/* font-size: 2em; */
 	margin-bottom: 20px;
 	color: #a0522d;
+}
+
+#landing-logo{
+	border: #000;
+	min-width: 10em;
+	height: 10em;
+	background-image: url("landing-logo.svg");
+	position: absolute;
+	top: 84vh;
+	/* background-color: black; */
+	z-index: 6;
+	left: 14%;
 }
 
 section #events,
