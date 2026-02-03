@@ -146,14 +146,12 @@ h2 {
 	color: #a0522d;
 }
 
-#landing-logo{
-	border: #000;
+#landing-logo {
 	min-width: 10em;
 	height: 10em;
 	background-image: url("landing-logo.svg");
 	position: absolute;
 	top: 84vh;
-	/* background-color: black; */
 	z-index: 6;
 	left: 14%;
 }
@@ -163,6 +161,39 @@ section #events,
 	background-color: #fffaf5;
 
 	height: 85vh;
+}
+
+#events-top-left {
+	width: 13em;
+	height: 14em;
+	position: absolute;
+	margin-left: -2em;
+	margin-top: -2.1em;
+
+}
+#events-left{
+	width: 13em;
+	height: 14em;
+	position: absolute;
+	margin-top: 68vh;
+	margin-left: -4.1em;
+}
+
+#events-top-right{
+	width: 13em;
+	height: 14em;
+	position: absolute;
+	margin-top: 25vh;
+	margin-left: 88vw;
+	/* background-color: black; */
+}
+#events-right2{
+	width: 13em;
+	height: 14em;
+	position: absolute;
+	margin-top: 75vh;
+	margin-left: 88vw;
+	/* background-color: black; */
 }
 .btn-rsvp {
 	background-color: #d93b59;
@@ -381,8 +412,8 @@ button {
 	font-family: "Playfair Display", serif;
 	font-weight: bold;
 }
-#rsvp-btn:hover{
-	background-color:#d93b59 ;
+#rsvp-btn:hover {
+	background-color: #d93b59;
 	color: #fbf8f8;
 }
 
