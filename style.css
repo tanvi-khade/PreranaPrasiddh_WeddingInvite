@@ -56,7 +56,7 @@ body {
 	position: relative;
 	z-index: 2;
 	margin-top: -133vh;
-	margin-left: -10vw;
+	margin-left: -7vw;
 	min-height: 119vh;
 	max-width: 45%;
 	/* --mask:
@@ -74,7 +74,17 @@ body {
 		radial-gradient(105.02px at calc(100% + 91.8px) 50%, #0000 99%, #000 101%)
 			calc(100% - 51px) 50%/100% 204px repeat-y;
 	-webkit-mask: var(--mask);
+	mask: var(--mask); */
+	--mask:
+		radial-gradient(168.85px at calc(100% - 229.6px) 50%, #000 99%, #0000 101%)
+			0 calc(50% - 164px)/100% 328px,
+		radial-gradient(168.85px at calc(100% + 147.6px) 50%, #0000 99%, #000 101%)
+			calc(100% - 82px) 50%/100% 328px repeat-y;
+	-webkit-mask: var(--mask);
 	mask: var(--mask);
+	background-image: url("landing.svg");
+	background-size: contain;
+	background-position-x: center;
 }
 
 #landing {
@@ -85,6 +95,8 @@ body {
 	background-position: left;
 	background-image: url("C:\\Users\\ASUS\\source\\repos\\shweta\\invite_website\\couple.jpeg");
 	overflow: clip;
+	background-position-x: left;
+	background-position-y: bottom;
 }
 .pill {
 	color: #e2d9cc;
@@ -92,7 +104,7 @@ body {
 	width: 25%;
 	padding: 123px 25px;
 	border-radius: 280px;
-	margin-left: 10%;
+	margin-left: 15%;
 	margin-top: 3%;
 	position: absolute;
 	display: flow;
