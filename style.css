@@ -29,13 +29,21 @@ body {
 .nav-left,
 .nav-right {
 	display: flex;
+	align-items: center;
 }
 .nav-item {
 	margin-left: auto;
 	padding: 8px 16px;
 	font-size: 22px;
 }
-
+.nav-item img{
+	max-width: 2em;
+	max-height: 2em;
+	padding: 0px;
+}
+#nav-logo{
+	padding-right: 0px;
+}
 .nav-item a {
 	display: inline;
 	color: black;
