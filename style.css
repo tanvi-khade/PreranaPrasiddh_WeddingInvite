@@ -12,6 +12,12 @@ body {
 	display: flex;
 	justify-content: center;
 	text-align: center;
+	color: #a0522d;
+	font-family: "Playfair Display", serif;
+	margin-bottom: 20px;
+}
+.section-heading-container p{
+	color: #000;
 }
 
 .nav {
@@ -259,7 +265,7 @@ section #events,
 	font-size: 1.5em;
 	font-weight: bold;
 }
-#dress-code{
+#dress-code {
 	position: relative;
 }
 .dress-code {
@@ -336,7 +342,7 @@ section #events,
 	font-weight: 100;
 }
 
-#venue-side-div{
+#venue-side-div {
 	background-color: #d93b59;
 	position: absolute;
 	right: -12%;
@@ -345,19 +351,19 @@ section #events,
 	height: 250px;
 	border-radius: 300px;
 }
-#venue-side-logo{
+#venue-side-logo {
 	width: 160px;
 	margin-left: 19%;
 	margin-right: auto;
 	margin-top: 8%;
 }
 
-#venue-text-logo{
+#venue-text-logo {
 	position: absolute;
 	left: 12%;
 	width: 247px;
 	top: 1%;
- } 
+}
 
 #venue-details {
 	font-style: italic;
@@ -510,6 +516,12 @@ button {
 	border: 1px solid #888;
 	width: 50%; /* Could be more or less, depending on screen size */
 	border-radius: 1em;
+	position: relative;
+	font-family: "Playfair Display", serif;}
+
+.right-arrow {
+	font-size: large;
+	color: #000;
 }
 
 .close {
@@ -517,6 +529,9 @@ button {
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
+	position: absolute;
+	right: 22px;
+	top: 13px;
 }
 
 .close:hover,
@@ -535,13 +550,13 @@ footer {
 	color: #000;
 }
 
-#footer-left{
+#footer-left {
 	width: 23%;
 	position: absolute;
 	left: -10%;
 	top: 0;
 }
-#footer-right{
+#footer-right {
 	width: 33%;
 	position: absolute;
 	right: -10%;

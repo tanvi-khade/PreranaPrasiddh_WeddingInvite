@@ -46,4 +46,8 @@ var form = document.getElementById("rsvp-form");
       status.innerHTML = "Oops! There was a problem submitting your form"
     });
   }
-  form.addEventListener("submit", handleSubmit)
+  form.addEventListener("submit", handleSubmit);
+
+  function slidePopup(eventName){
+    modal = document.getElementById(eventName);
+  }
