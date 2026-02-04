@@ -160,8 +160,8 @@ h2 {
 section #events,
 #dress-code {
 	background-color: #fffaf5;
-
 	height: 85vh;
+	position: relative;
 }
 
 #events-top-left {
@@ -191,8 +191,10 @@ section #events,
 	width: 13em;
 	height: 14em;
 	position: absolute;
-	margin-top: 75vh;
-	margin-left: 88vw;
+	/* margin-top: 75vh; */
+	/* bottom: -5%; */
+	/* margin-left: 88vw; */
+	right: -6%;
 	/* background-color: black; */
 }
 .btn-rsvp {
@@ -256,7 +258,9 @@ section #events,
 	font-size: 1.5em;
 	font-weight: bold;
 }
-
+#dress-code{
+	position: relative;
+}
 .dress-code {
 	padding: 20px;
 	border-radius: 8px;
@@ -272,12 +276,14 @@ section #events,
 }
 
 #dress-code-bottom-right {
-	height: 25em;
-	width: 40em;
+	/* height: 25em; */
+	width: 23%;
 	position: absolute;
 	margin-top: -10em;
 	z-index: 5;
-	margin-left: 61vw;
+	/* margin-left: 61vw; */
+	right: 2%;
+	bottom: -15%;
 }
 
 .dress-code-row {
