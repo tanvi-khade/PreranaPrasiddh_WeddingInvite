@@ -94,15 +94,16 @@ body {
 }
 
 #landing {
-	/* position: absolute; */
+	position: relative;
 	min-width: 100%;
-	min-height: 120vh;
+	min-height: 126dvh;
 	text-align: center;
 	background-position: left;
 	background-image: url("couple.jpeg");
 	overflow: clip;
 	background-position-x: left;
 	background-position-y: bottom;
+	background-repeat: no-repeat;
 }
 .pill {
 	color: #e2d9cc;
@@ -110,12 +111,14 @@ body {
 	width: 25%;
 	padding: 123px 25px;
 	border-radius: 280px;
-	margin-left: 15%;
-	margin-top: 3%;
+	/* margin-left: 15%; */
+	/* margin-top: 3%; */
 	position: absolute;
 	display: flow;
-	min-height: 45vh;
+	min-height: 30vh;
 	z-index: 5;
+	left: 15%;
+	top: 3%;
 }
 
 .pill .center {
@@ -158,9 +161,9 @@ h2 {
 	height: 10em;
 	background-image: url("landing-logo.svg");
 	position: absolute;
-	top: 84vh;
+	bottom: -17%;
 	z-index: 6;
-	left: 14%;
+	left: 15%;
 }
 
 section #events,
