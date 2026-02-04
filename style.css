@@ -157,7 +157,7 @@ h2 {
 	left: 14%;
 }
 
-section #events,
+#events,
 #dress-code {
 	background-color: #fffaf5;
 	height: 85vh;
@@ -325,7 +325,8 @@ section #events,
 }
 
 #venue .section-heading-container {
-	margin-top: 2em;
+	/* margin-top: 2em; */
+	padding-top: 1%;
 }
 .venue-content h1 {
 	font-family: "Rochester", cursive;
