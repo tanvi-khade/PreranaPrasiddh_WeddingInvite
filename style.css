@@ -165,7 +165,7 @@ section #events,
 }
 
 #events-top-left {
-	width: 13em;
+	width: 15%;
 	height: 14em;
 	position: absolute;
 	margin-left: -2em;
@@ -180,11 +180,12 @@ section #events,
 }
 
 #events-top-right {
-	width: 13em;
-	height: 14em;
+	width: 15%;
+	/* height: 14em; */
 	position: absolute;
-	margin-top: 25vh;
-	margin-left: 88vw;
+	top: 12%;
+	/* margin-left: 88vw; */
+	right: -3%;
 	/* background-color: black; */
 }
 #events-right2 {
@@ -356,16 +357,18 @@ section #events,
 	left: 12%;
 	width: 247px;
 	top: 1%;
-}
+ } 
 
 #venue-details {
 	font-style: italic;
 	margin: 2em 0em 2.7em;
 }
 #venue-map {
-	width: 100%;
+	width: 91%;
 	display: flex;
 	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 #venue-map iframe {
 	border: 0;
@@ -373,10 +376,11 @@ section #events,
 	height: 60vh;
 }
 #guide {
+	margin-top: 6%;
 	background-color: #ebdacc;
 }
 .guide-content {
-	padding: 0 5%;
+	padding: 0 9%;
 	width: 65%;
 }
 #flower-container {
@@ -396,7 +400,7 @@ section #events,
 	mask: var(--mask);
 }
 #lavendar {
-	max-width: 100%;
+	width: 100vw;
 	margin-top: 2em;
 }
 #rsvp {
@@ -406,7 +410,7 @@ section #events,
 	min-height: 60vh;
 	padding-left: 5%;
 	padding-bottom: 2em;
-	/* width: 100%; */
+	width: 95%;
 }
 #rsvp h2 {
 	color: #d93b59;
