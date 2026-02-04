@@ -170,9 +170,8 @@ section #events,
 	position: absolute;
 	margin-left: -2em;
 	margin-top: -2.1em;
-
 }
-#events-left{
+#events-left {
 	width: 13em;
 	height: 14em;
 	position: absolute;
@@ -180,7 +179,7 @@ section #events,
 	margin-left: -4.1em;
 }
 
-#events-top-right{
+#events-top-right {
 	width: 13em;
 	height: 14em;
 	position: absolute;
@@ -188,7 +187,7 @@ section #events,
 	margin-left: 88vw;
 	/* background-color: black; */
 }
-#events-right2{
+#events-right2 {
 	width: 13em;
 	height: 14em;
 	position: absolute;
@@ -263,18 +262,18 @@ section #events,
 	border-radius: 8px;
 }
 
-#dress-code-bottom-left{
+#dress-code-bottom-left {
 	height: 25em;
-	width:40em;
+	width: 40em;
 	position: absolute;
 	margin-top: -14em;
 	z-index: 99;
 	margin-left: -9em;
 }
 
-#dress-code-bottom-right{
+#dress-code-bottom-right {
 	height: 25em;
-	width:40em;
+	width: 40em;
 	position: absolute;
 	margin-top: -10em;
 	z-index: 5;
@@ -300,14 +299,22 @@ section #events,
 	background-color: #ebdacc;
 	min-height: 100vh;
 	z-index: 6;
+	position: relative;
 }
 
-#venue-top{
+#venue-top {
 	width: 30%;
 	height: 25%;
 	position: absolute;
 	left: 70%;
 	margin-top: -5em;
+}
+#venue-bottom-left {
+	width: 16%;
+	height: auto;
+	position: absolute;
+	bottom: -248px;
+	left: -91px;
 }
 
 #venue .section-heading-container {
@@ -320,6 +327,29 @@ section #events,
 .venue-content {
 	text-align: center;
 	font-weight: 100;
+}
+
+#venue-side-div{
+	background-color: #d93b59;
+	position: absolute;
+	right: -12%;
+	bottom: -111px;
+	width: 500px;
+	height: 250px;
+	border-radius: 300px;
+}
+#venue-side-logo{
+	width: 160px;
+	margin-left: 19%;
+	margin-right: auto;
+	margin-top: 8%;
+}
+
+#venue-text-logo{
+	position: absolute;
+	left: 12%;
+	width: 247px;
+	top: 1%;
 }
 
 #venue-details {
@@ -490,6 +520,20 @@ button {
 }
 footer {
 	margin: 2em;
+	position: relative;
 
 	color: #000;
+}
+
+#footer-left{
+	width: 23%;
+	position: absolute;
+	left: -10%;
+	top: 0;
+}
+#footer-right{
+	width: 33%;
+	position: absolute;
+	right: -10%;
+	top: 0;
 }
