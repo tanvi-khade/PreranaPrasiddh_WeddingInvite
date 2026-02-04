@@ -229,7 +229,8 @@ h2 {
 	/* background-color: #ebdacc; */
 	background-image: url("events-circle2.svg");
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .event-card div {
