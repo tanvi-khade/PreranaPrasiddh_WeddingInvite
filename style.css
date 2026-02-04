@@ -347,18 +347,18 @@ h2 {
 	border-radius: 300px;
 }
 #venue-side-logo{
-	width: 160px;
-	margin-left: 19%;
+	width: 135px;
+	margin-left: 15%;
 	margin-right: auto;
-	margin-top: 8%;
+	margin-top: 11%;
 }
 
 #venue-text-logo{
 	position: absolute;
-	left: 12%;
-	width: 247px;
-	top: 1%;
- } 
+	left: 7%;
+	width: 232px;
+	top: 5%;
+	} 
 
 #venue-details {
 	font-style: italic;
