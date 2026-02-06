@@ -52,14 +52,36 @@ body {
 	text-decoration: none;
 	text-align: end;
 }
-.side-wave {
-	background-color: #fdf8f9;
+
+#landing {
 	position: relative;
+	min-width: 100%;
+	min-height: 105vh;
+	text-align: center;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+
+#landing-bg {
+	/* background-position: right; */
+	background-image: url("couple.jpeg");
+	background-position-x: center;
+	background-position-y: bottom;
+	height: 100%;
+	width: 75%;
+	position: absolute;
+	right: 0;
+}
+.side-wave {
+	display: inline;
+	background-color: #fdf8f9;
+	position: absolute;
 	z-index: 2;
-	margin-top: -133vh;
-	margin-left: -7vw;
-	min-height: 119vh;
-	max-width: 45%;
+	/* margin-top: -133vh;
+	margin-left: -7vw; */
+	min-height: 100%;
+	width: 40%;
 	--mask:
 		radial-gradient(168.85px at calc(100% - 229.6px) 50%, #000 99%, #0000 101%)
 			0 calc(50% - 164px)/100% 328px,
@@ -68,20 +90,9 @@ body {
 	-webkit-mask: var(--mask);
 	mask: var(--mask);
 	background-image: url("landing.svg");
-	background-size: contain;
-	background-position-x: center;
-}
-
-#landing {
-	/* position: absolute; */
-	min-width: 100%;
-	min-height: 120vh;
-	text-align: center;
-	background-position: left;
-	background-image: url("couple.jpeg");
-	overflow: clip;
-	background-position-x: left;
-	background-position-y: bottom;
+	background-size: cover;
+	/* background-position-x: inherit; */
+	background-position-y: center;
 }
 .pill {
 	color: #e2d9cc;
@@ -89,12 +100,14 @@ body {
 	width: 25%;
 	padding: 123px 25px;
 	border-radius: 280px;
-	margin-left: 15%;
-	margin-top: 3%;
+	/* margin-left: 18%; */
+	/* margin-top: 3%; */
 	position: absolute;
+	left: 17%;
 	display: flow;
 	min-height: 45vh;
 	z-index: 5;
+	top: 5%;
 }
 
 .pill .center {
@@ -137,9 +150,10 @@ h2 {
 	height: 10em;
 	background-image: url("landing-logo.svg");
 	position: absolute;
-	top: 84vh;
+	bottom: -6%;
 	z-index: 6;
-	left: 14%;
+	left: -3%;
+	display: inline;
 }
 
 #events,
@@ -245,7 +259,7 @@ h2 {
 	font-size: 1.5em;
 	font-weight: bold;
 }
-#dress-code{
+#dress-code {
 	position: relative;
 }
 .dress-code {
@@ -323,7 +337,7 @@ h2 {
 	font-weight: 100;
 }
 
-#venue-side-div{
+#venue-side-div {
 	background-color: #d93b59;
 	position: absolute;
 	right: -12%;
@@ -332,19 +346,19 @@ h2 {
 	height: 250px;
 	border-radius: 300px;
 }
-#venue-side-logo{
+#venue-side-logo {
 	width: 135px;
 	margin-left: 15%;
 	margin-right: auto;
 	margin-top: 11%;
 }
 
-#venue-text-logo{
+#venue-text-logo {
 	position: absolute;
 	left: 7%;
 	width: 232px;
 	top: 5%;
-	} 
+}
 
 #venue-details {
 	font-style: italic;
@@ -499,10 +513,9 @@ button {
 	border-radius: 1em;
 }
 
-.right-arrow{
+.right-arrow {
 	font-size: large;
-	color: #000
-	;
+	color: #000;
 }
 
 .close {
@@ -528,13 +541,13 @@ footer {
 	color: #000;
 }
 
-#footer-left{
+#footer-left {
 	width: 23%;
 	position: absolute;
 	left: -10%;
 	top: 0;
 }
-#footer-right{
+#footer-right {
 	width: 33%;
 	position: absolute;
 	right: -10%;
