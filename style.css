@@ -14,6 +14,7 @@ body {
 	text-align: center;
 }
 
+/*#region nav*/
 .nav {
 	position: sticky;
 	/* width: 100%; */
@@ -52,15 +53,15 @@ body {
 	text-decoration: none;
 	text-align: end;
 }
+/*#endregion */
 
+/*#region landing*/
 #landing {
 	position: relative;
-	min-width: 100%;
-	min-height: 105vh;
-	text-align: center;
-	overflow: clip;
+	width: 100%;
+	height: 100vh;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row-reverse;
 }
 
 #landing-bg {
@@ -68,20 +69,17 @@ body {
 	background-image: url("couple.jpeg");
 	background-position-x: center;
 	background-position-y: bottom;
+	width: 60%;
 	height: 100%;
-	width: 75%;
 	position: absolute;
 	right: 0;
 }
 .side-wave {
-	display: inline;
-	background-color: #fdf8f9;
+	width: 50%;
+	height: 100%;
 	position: absolute;
+	left: 0;
 	z-index: 2;
-	/* margin-top: -133vh;
-	margin-left: -7vw; */
-	min-height: 100%;
-	width: 40%;
 	--mask:
 		radial-gradient(168.85px at calc(100% - 229.6px) 50%, #000 99%, #0000 101%)
 			0 calc(50% - 164px)/100% 328px,
@@ -89,25 +87,25 @@ body {
 			calc(100% - 82px) 50%/100% 328px repeat-y;
 	-webkit-mask: var(--mask);
 	mask: var(--mask);
+	background-color: #fdf8f9;
 	background-image: url("landing.svg");
 	background-size: cover;
-	/* background-position-x: inherit; */
-	background-position-y: center;
+	background-position: center;
 }
 .pill {
 	color: #e2d9cc;
 	background-color: #d93b59;
 	width: 25%;
-	padding: 123px 25px;
+	padding: 8em 1.7em;
 	border-radius: 280px;
-	/* margin-left: 18%; */
-	/* margin-top: 3%; */
-	position: absolute;
-	left: 17%;
+	text-align: center;
 	display: flow;
 	min-height: 45vh;
-	z-index: 5;
+	position: absolute;
+	left: 25%;
 	top: 5%;
+	z-index: 5;
+	/* clip-path: inset(5% 33% 10% 23% round 20% 20% 20% 20%); */
 }
 
 .pill .center {
@@ -150,11 +148,11 @@ h2 {
 	height: 10em;
 	background-image: url("landing-logo.svg");
 	position: absolute;
-	bottom: -6%;
-	z-index: 6;
-	left: -3%;
-	display: inline;
+	left: -7%;
+	bottom: -4%;
 }
+
+/*#endregion */
 
 #events,
 #dress-code {
