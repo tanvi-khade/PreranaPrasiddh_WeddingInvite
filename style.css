@@ -403,10 +403,20 @@ h2 {
 #flower-container {
 	background-color: #fffaf5;
 }
-.box {
-	/* margin-top: -276px; */
-	/* height: 100px; */
-	/* min-height: 170px; */
+
+#lavendar {
+	width: 100vw;
+	margin-top: 2em;
+	anchor-name: --lavendar;
+}
+
+#rsvp {
+	margin-top: -186px;
+	background-color: #f4f4f4;
+	min-height: 60vh;
+	padding-left: 5%;
+	width: 100%;
+	padding-bottom: 2em;
 	background-color: #fffaf5;
 	--mask:
 		radial-gradient(223.06px at 50% 312.8px, #000 99%, #0000 101%)
@@ -415,19 +425,6 @@ h2 {
 			136px/544px 100% repeat-x;
 	-webkit-mask: var(--mask);
 	mask: var(--mask);
-}
-#lavendar {
-	width: 100vw;
-	margin-top: 2em;
-}
-#rsvp {
-	padding-top: 250px;
-	margin-top: -186px;
-	background-color: #f4f4f4;
-	min-height: 60vh;
-	padding-left: 5%;
-	padding-bottom: 2em;
-	width: 95%;
 }
 #rsvp h2 {
 	color: #d93b59;
@@ -673,8 +670,29 @@ footer {
 		left: calc(anchor(left) + 35%);
 		z-index: 7;
 	}
-	#guide{
-	margin-top: 45%;
+	#guide {
+		margin-top: 45%;
+	}
+	#rsvp {
+		margin-top: -15%;
+		--mask:
+			radial-gradient(76.59px at 50% 104.5px, #000 99%, #0000 101%)
+				calc(50% - 76px) 0/152px 100%,
+			radial-gradient(76.59px at 50% -66.5px, #0000 99%, #000 101%) 50%
+				38px/152px 100% repeat-x;
+		-webkit-mask: var(--mask);
+		mask: var(--mask);
+		mask: var(--mask);
+	}
+
+	#rsvp-content {
+		flex-direction: column;
+		height: auto;
+	}
+
+	#rsvp-form-wrapper{
+		padding: 0;
+		padding-right: 2em;;
 	}
 }
 
