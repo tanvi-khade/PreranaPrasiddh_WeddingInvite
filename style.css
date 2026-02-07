@@ -624,6 +624,21 @@ footer {
 	#lastP {
 		margin-bottom: 5em;
 	}
+#events{
+	
+	height: auto;
+	padding-top: 20%;
+}
+	.event-grid {
+		/* flex-wrap: wrap; */
+		flex-direction: column;
+		min-height: 100dvh;
+		justify-content: space-evenly;
+	}
+	.event-card{
+		width: auto;
+		background-position: center;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
