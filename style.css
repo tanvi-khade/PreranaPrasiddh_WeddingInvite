@@ -12,6 +12,8 @@ body {
 	display: flex;
 	justify-content: center;
 	text-align: center;
+	padding-left: 3em;
+	padding-right: 3em;
 }
 
 /*#region nav*/
@@ -314,6 +316,7 @@ h2 {
 	min-height: 100vh;
 	z-index: 6;
 	position: relative;
+	anchor-name: --venue;
 }
 
 #venue-top {
@@ -332,9 +335,9 @@ h2 {
 }
 
 #venue .section-heading-container {
-	/* margin-top: 2em; */
 	padding-top: 1%;
 }
+
 .venue-content h1 {
 	font-family: "Rochester", cursive;
 	font-weight: 100;
@@ -353,6 +356,13 @@ h2 {
 	height: 250px;
 	border-radius: 300px;
 	anchor-name: --venueSideDiv;
+	position-anchor: --venue;
+
+	height: calc(anchor-size(height) * 0.15);
+	width: calc(anchor-size(width) * 0.9);
+	bottom: calc(anchor(bottom) - 1em);
+	left: anchor(right);
+	z-index: 7;
 }
 #venue-side-logo {
 	position: absolute;
@@ -372,7 +382,6 @@ h2 {
 }
 
 #venue-details {
-	font-style: italic;
 	margin: 2em 0em 2.7em;
 }
 #venue-map {
@@ -628,20 +637,48 @@ footer {
 	#lastP {
 		margin-bottom: 5em;
 	}
-#events{
-	
-	height: auto;
-	padding-top: 20%;
-}
+	#events {
+		height: auto;
+		padding-top: 20%;
+	}
 	.event-grid {
 		/* flex-wrap: wrap; */
 		flex-direction: column;
 		min-height: 100dvh;
 		justify-content: space-evenly;
 	}
-	.event-card{
+	.event-card {
 		width: auto;
 		background-position: center;
+	}
+
+	#dress-code {
+		height: auto;
+		padding-top: 20%;
+	}
+
+	.dress-code-row {
+		flex-direction: column;
+	}
+	.dress-code-event {
+		min-width: 100%;
+		margin-bottom: 2em;
+	}
+	#venue {
+		height: 125vh;
+	}
+	#venue-details {
+		padding-left: 3em;
+		padding-right: 3em;
+		white-space: pre-line;
+	}
+
+	#venue-side-div {
+		height: calc(anchor-size(height) * 0.15);
+		width: calc(anchor-size(width) * 0.9);
+		bottom: calc(anchor(bottom) - 1em);
+		left: anchor(right);
+		z-index: 5;
 	}
 }
 
