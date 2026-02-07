@@ -352,19 +352,23 @@ h2 {
 	width: 500px;
 	height: 250px;
 	border-radius: 300px;
+	anchor-name: --venueSideDiv;
 }
 #venue-side-logo {
-	width: 135px;
-	margin-left: 15%;
-	margin-right: auto;
-	margin-top: 11%;
+	position: absolute;
+	position-anchor: --venueSideDiv;
+	width: calc((anchor-size(width) * 0.3));
+	position-anchor: --venueSideDiv;
+	position-area: center;
+	left: calc(anchor(left) - 42%);
 }
 
 #venue-text-logo {
 	position: absolute;
-	left: 7%;
-	width: 232px;
-	top: 5%;
+	width: calc((anchor-size(width) * 0.45));
+	position-anchor: --venueSideDiv;
+	position-area: center;
+	left: calc(anchor(left) - 42%);
 }
 
 #venue-details {
