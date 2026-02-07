@@ -690,9 +690,22 @@ footer {
 		height: auto;
 	}
 
-	#rsvp-form-wrapper{
+	#rsvp-form-wrapper {
 		padding: 0;
-		padding-right: 2em;;
+		padding-right: 2em;
+	}
+	#footer-left,
+	#footer-right {
+		width: 60%;
+	}
+	#footer-right{
+		bottom: 0;
+		top: unset;
+	}
+	#footer-left{
+		top: 0;
+		bottom: unset;
+		left: -25%;
 	}
 }
 
