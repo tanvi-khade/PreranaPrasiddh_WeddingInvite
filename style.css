@@ -393,7 +393,7 @@ h2 {
 	height: 60vh;
 }
 #guide {
-	margin-top: 6%;
+	margin-top: 10%;
 	background-color: #ebdacc;
 }
 .guide-content {
@@ -670,8 +670,11 @@ footer {
 		height: calc(anchor-size(height) * 0.15);
 		width: calc(anchor-size(width) * 0.9);
 		bottom: calc(anchor(bottom) - 1em);
-		left: anchor(right);
+		left: calc(anchor(left) + 35%);
 		z-index: 7;
+	}
+	#guide{
+	margin-top: 45%;
 	}
 }
 
