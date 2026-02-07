@@ -97,7 +97,7 @@ body {
 	color: #e2d9cc;
 	background-color: #d93b59;
 	width: 25%;
-	padding: 8em 1.7em;
+	/* padding: 8em 1.7em; */
 	border-radius: 280px;
 	text-align: center;
 	display: flow;
@@ -107,7 +107,10 @@ body {
 	top: 5%;
 	z-index: 5;
 	anchor-name: --pill;
-	/* clip-path: inset(5% 33% 10% 23% round 20% 20% 20% 20%); */
+	padding-top: 8%;
+	padding-bottom: 8%;
+	padding-left: 2%;
+	padding-right: 2%;
 }
 
 .pill .center {
@@ -153,7 +156,8 @@ h2 {
 	/* left: -7%;
 	bottom: -4%; */
 	position-anchor: --pill;
-	position-area: bottom left;
+	bottom: calc(anchor(bottom) - 4em);
+	left: anchor(left);
 	z-index: 5;
 }
 
@@ -555,4 +559,125 @@ footer {
 	position: absolute;
 	right: -10%;
 	top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.nav {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+		margin: 0;
+		font-size: large;
+	}
+	.nav-left {
+		width: 100%;
+		background-color: #ebdacc;
+		display: flex;
+		justify-content: center;
+	}
+	.nav-right {
+		width: 100%;
+		background-color: #ebdacc;
+		display: flex;
+		justify-content: space-around;
+		height: 3em;
+	}
+	.nav-item {
+		padding: 0;
+		margin: 0;
+	}
+	.nav-item img {
+		padding-right: 10px;
+		padding-top: 1px;
+	}
+
+	#landing {
+		flex-direction: column-reverse;
+		height: 200vh;
+	}
+	#landing-bg,
+	.side-wave {
+		width: 100%;
+		height: 50%;
+	}
+	#landing-bg {
+		top: 0;
+		background-position: center;
+	}
+	.side-wave {
+		position: relative;
+		mask: no-mask;
+		width: 100vw;
+		--mask: none;
+	}
+	.pill {
+		position: absolute;
+		top: 52%;
+		left: 50%;
+		transform: translateX(-50%);
+		/* height: 30%; */
+		width: 70%;
+		/* padding: 134px 20px; */
+		padding-top: 20%;
+		padding-bottom: 22%;
+	}
+	#lastP {
+		margin-bottom: 5em;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+	#landing {
+		flex-direction: column-reverse;
+		height: 230vh;
+	}
+	#landing-bg,
+	.side-wave {
+		width: 100%;
+		height: 50%;
+	}
+	#landing-bg {
+		top: 0;
+		background-position: center;
+	}
+	.side-wave {
+		position: relative;
+		mask: no-mask;
+		width: 100vw;
+		--mask: none;
+	}
+	.pill {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 52%;
+		/* height: 30%; */
+		width: 70%;
+		/* padding: 134px 20px; */
+		padding-top: 22%;
+		padding-bottom: 22%;
+	}
+
+	#pill-content {
+		height: 100%;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	#lastP {
+		margin-bottom: 5em;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
