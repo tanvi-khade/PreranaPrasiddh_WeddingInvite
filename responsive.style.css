@@ -64,6 +64,9 @@
 	}
 	#landing-logo {
 		bottom: -10%;
+		position-anchor: --pill;
+		bottom: calc(anchor(bottom) - 4em);
+		left: anchor(left);
 	}
 }
 
