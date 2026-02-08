@@ -539,7 +539,7 @@ button {
 	justify-content: space-between;
 	padding: 2em;
 }
-.event.right{
+.event.right {
 	flex-direction: row-reverse;
 }
 .event-title {
@@ -552,7 +552,6 @@ button {
 	align-items: center;
 	/* width: 40%; */
 }
-
 
 .event-details {
 	width: 65%;
@@ -762,6 +761,19 @@ footer {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: justify;
+	}
+
+	.event {
+		flex-direction: column;
+	}
+	.event-title {
+		width: 100%;
+	}
+	.event-details {
+		width: 100%;
+	}
+	.event.right {
+		flex-direction: column;
 	}
 }
 
