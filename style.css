@@ -533,11 +533,46 @@ button {
 	transform: translate(-50%, -50%);
 }
 
+.event {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2em;
+}
+.event.right{
+	flex-direction: row-reverse;
+}
+.event-title {
+	font-family: "Rochester", cursive;
+	/* font-size: 2em; */
+	text-align: center;
+	width: 30%;
+	color: #a0522d;
+	display: flex;
+	align-items: center;
+	/* width: 40%; */
+}
+
+
+.event-details {
+	width: 65%;
+}
+.event-details .right {
+	text-align: justify;
+	text-align-last: right;
+}
+
+.event-details .left {
+	text-align: justify;
+	text-align-last: left;
+}
 .close {
 	color: black;
-	float: right;
+	/* float: right; */
 	font-size: 28px;
 	font-weight: bold;
+	margin: 10px;
+	text-align: right;
 }
 
 .close:hover,
@@ -725,7 +760,7 @@ footer {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%, -50%);
 		text-align: justify;
 	}
 }
