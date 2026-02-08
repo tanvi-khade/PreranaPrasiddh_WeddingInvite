@@ -1,6 +1,6 @@
 window.onload = function () {
 	var padding = document.getElementById("lavendar").clientHeight;
-	console.log("padding", padding);
+	// console.log("padding", padding);
 	if (padding > 79)
 		document.getElementById("rsvp").style.paddingTop = `${padding}px`;
   else

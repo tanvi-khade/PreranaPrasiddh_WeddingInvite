@@ -596,7 +596,7 @@ footer {
 
 	#landing {
 		flex-direction: column-reverse;
-		height: 200vh;
+		min-height: max(210vh,2000px);
 	}
 	#landing-bg,
 	.side-wave {
@@ -629,7 +629,8 @@ footer {
 	}
 	#events {
 		height: auto;
-		padding-top: 20%;
+		padding-top: 10%;
+		/* margin-top: 30%; */
 	}
 	.event-grid {
 		/* flex-wrap: wrap; */
