@@ -195,14 +195,11 @@ h2 {
 	z-index: 1;
 }
 #events-left {
-	width: max(15%, 13rem);
+	width: max(9%, 5rem);
 	position: absolute;
-	position-anchor: --eventsDiv;
-	/* left: calc(anchor(left) - 4%); */
+	position-anchor: --dressCode;
 	left: anchor(left);
-	bottom: anchor(bottom);
-	transform: translate(-30%, 36%);
-	/* bottom: calc(anchor(bottom) - 2%); */
+	top: anchor(top);
 	z-index: 1;
 }
 
@@ -682,6 +679,10 @@ footer {
 		height: auto;
 		padding-top: 10%;
 		/* margin-top: 30%; */
+	}
+
+	#events-left{
+		transform: translateY(-34%);
 	}
 	.event-grid {
 		/* flex-wrap: wrap; */
