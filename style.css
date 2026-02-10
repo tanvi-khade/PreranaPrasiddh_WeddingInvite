@@ -295,7 +295,6 @@ h2 {
 	border-radius: 8px;
 }
 
-
 #dress-code-bottom-right {
 	/* height: 25em; */
 	width: max(20%, 10rem);
@@ -303,7 +302,7 @@ h2 {
 	position-anchor: --dressCode;
 	right: anchor(right);
 	/* position-area: center span-inline-end; */
-	bottom : anchor(bottom);
+	bottom: anchor(bottom);
 	/* margin-top: -10em; */
 	z-index: 5;
 	/* margin-left: 61vw; */
@@ -460,6 +459,30 @@ h2 {
 	margin-top: 2em;
 	text-align: center;
 }
+
+#countDown-wrapper {
+	font-family: "Rochester", cursive;
+	margin-top: 6%;
+	margin-bottom: 6%;
+}
+
+#countdown {
+	font-size: 6em;
+	color: #d93b59;
+	font-weight: bold;
+	anchor-name: --countdownDay;
+}
+
+#countdown-label {
+	/* padding-top: 1.2%; */
+	font-size: 2.1em;
+	font-family: "Playfair Display", serif;
+	position: absolute;
+	position-anchor: --countdownDay;
+	left: calc(anchor(right) + 1%);
+	top: calc(anchor(top) + 17px);
+}
+
 
 footer {
 	text-align: center;
@@ -681,7 +704,7 @@ footer {
 		/* margin-top: 30%; */
 	}
 
-	#events-left{
+	#events-left {
 		transform: translateY(-34%);
 	}
 	.event-grid {
