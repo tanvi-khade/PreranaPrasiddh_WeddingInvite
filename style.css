@@ -568,12 +568,12 @@ button {
 .event-details {
 	width: 65%;
 }
-.event-details .right {
+.event-details.right {
 	text-align: justify;
 	text-align-last: right;
 }
 
-.event-details .left {
+.event-details.left {
 	text-align: justify;
 	text-align-last: left;
 }
