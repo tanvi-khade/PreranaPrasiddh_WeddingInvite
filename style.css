@@ -797,11 +797,13 @@ footer {
 	#footer-right {
 		bottom: 0;
 		top: unset;
+		width: 55%;
 	}
 	#footer-left {
 		top: 0;
 		bottom: unset;
 		left: -25%;
+		width: 50%;
 	}
 	.event-popup-content {
 		background-color: #ebdacc;

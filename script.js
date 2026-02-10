@@ -3,15 +3,15 @@ window.onload = function () {
 	// console.log("padding", padding);
 	if (padding > 79)
 		document.getElementById("rsvp").style.paddingTop = `${padding}px`;
-  else
-    document.getElementById("rsvp").style.paddingTop ='50px';
+	else document.getElementById("rsvp").style.paddingTop = "50px";
 
-
-  let dateNow = Date.now();
-  let  eventDate = new Date("2026-12-25T00:00:00");
-let countdown = eventDate - dateNow;
-this.document.getElementById("countdown").innerHTML = Math.floor(countdown / (1000 * 60 * 60 * 24));
-}
+	let dateNow = Date.now();
+	let eventDate = new Date("2026-12-25T00:00:00");
+	let countdown = eventDate - dateNow;
+	this.document.getElementById("countdown").innerHTML = Math.floor(
+		countdown / (1000 * 60 * 60 * 24),
+	);
+};
 
 var span = document.getElementsByClassName("close")[0];
 var modal;
