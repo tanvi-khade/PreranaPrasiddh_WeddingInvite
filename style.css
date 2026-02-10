@@ -178,38 +178,53 @@ h2 {
 	position: relative;
 }
 
+#events {
+	anchor-name: --eventsDiv;
+}
+
 #events-top-left {
-	width: 18%;
+	width: max(16%, 8rem);
 	/* height: 14em; */
 	position: absolute;
-	margin-left: -2em;
-	margin-top: -2.1em;
+	/* margin-left: -2em; */
+	/* margin-top: -2.1em; */
+	position-anchor: --eventsDiv;
+	left: anchor(left);
+	top: anchor(top);
+	/* transform: translateY(1%); */
+	z-index: 1;
 }
 #events-left {
-	width: 13em;
-	height: 14em;
+	width: max(15%, 13rem);
 	position: absolute;
-	margin-top: 68vh;
-	margin-left: -4.1em;
+	position-anchor: --eventsDiv;
+	/* left: calc(anchor(left) - 4%); */
+	left: anchor(left);
+	bottom: anchor(bottom);
+	transform: translate(-30%, 36%);
+	/* bottom: calc(anchor(bottom) - 2%); */
+	z-index: 1;
 }
 
 #events-top-right {
-	width: 15%;
-	/* height: 14em; */
+	width: max(10%, 6rem);
+	position-anchor: --eventsDiv;
 	position: absolute;
-	top: 12%;
-	/* margin-left: 88vw; */
-	right: -3%;
-	/* background-color: black; */
+	top: calc(anchor(top) + 1%);
+	/* right: calc(anchor(right) - 3%); */
+	right: anchor(right);
+	/* transform: translateX(20%); */
+	z-index: 1;
 }
 #events-right2 {
-	width: 13em;
-	height: 14em;
+	width: max(6%, 4rem);
+	/* height: 14em; */
 	position: absolute;
 	/* margin-top: 75vh; */
 	/* bottom: -5%; */
 	/* margin-left: 88vw; */
-	right: -6%;
+	right: 0;
+	/* transform: translateX(47%); */
 	/* background-color: black; */
 }
 .btn-rsvp {
@@ -276,30 +291,27 @@ h2 {
 }
 #dress-code {
 	position: relative;
+	anchor-name: --dressCode;
 }
 .dress-code {
 	padding: 20px;
 	border-radius: 8px;
 }
 
-#dress-code-bottom-left {
-	height: 25em;
-	width: 40em;
-	position: absolute;
-	margin-top: -14em;
-	z-index: 99;
-	margin-left: -9em;
-}
 
 #dress-code-bottom-right {
 	/* height: 25em; */
-	width: 23%;
+	width: max(20%, 10rem);
 	position: absolute;
-	margin-top: -10em;
+	position-anchor: --dressCode;
+	right: anchor(right);
+	/* position-area: center span-inline-end; */
+	bottom : anchor(bottom);
+	/* margin-top: -10em; */
 	z-index: 5;
 	/* margin-left: 61vw; */
-	right: 2%;
-	bottom: -15%;
+	/* right: 2%; */
+	/* bottom: -15%; */
 }
 
 .dress-code-row {
@@ -689,6 +701,10 @@ footer {
 
 	.dress-code-row {
 		flex-direction: column;
+	}
+
+	.dress-code .dress-code-row:last-child {
+		margin-bottom: 3rem;
 	}
 	.dress-code-event {
 		min-width: 100%;
