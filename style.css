@@ -380,15 +380,15 @@ h2 {
 #venue-side-logo {
 	position: absolute;
 	position-anchor: --venueSideDiv;
-	width: calc((anchor-size(width) * 0.3));
+	width: calc((anchor-size(width) * 0.22));
 	position-area: center;
-	left: calc(anchor(left) - 47%);
+	left: calc(anchor(left) - 46%);
 	z-index: 8;
 }
 
 #venue-text-logo {
 	position: absolute;
-	width: calc((anchor-size(width) * 0.45));
+	width: calc((anchor-size(width) * 0.4));
 	position-anchor: --venueSideDiv;
 	position-area: center;
 	left: calc(anchor(left) - 42%);
@@ -720,14 +720,16 @@ footer {
 	}
 
 	#venue-side-div {
-		height: calc(anchor-size(height) * 0.15);
+		height: calc(anchor-size(height) * 0.17);
 		width: calc(anchor-size(width) * 0.9);
-		bottom: calc(anchor(bottom) - 1em);
-		left: calc(anchor(left) + 35%);
+		/* bottom: calc(anchor(bottom) - 1em); */
+		left: calc(anchor(left) + 38%);
 		z-index: 7;
+		top: anchor(bottom);
+		transform: translateY(-60%);
 	}
 	#guide {
-		margin-top: 45%;
+		margin-top: 35%;
 	}
 	#rsvp {
 		margin-top: -15%;
