@@ -484,6 +484,20 @@ h2 {
 }
 
 
+#mehendiUnderline,
+#mameraUnderline,
+#sangeetUnderline,
+#muhratUnderline {
+	width: 45%;
+	margin-top: -0.5em;
+	height: 30px;
+}
+#mameraUnderline,
+#sangeetUnderline,
+#muhratUnderline {
+	width: 50%;
+	height: 30px;
+}
 footer {
 	text-align: center;
 	padding: 40px 20px;

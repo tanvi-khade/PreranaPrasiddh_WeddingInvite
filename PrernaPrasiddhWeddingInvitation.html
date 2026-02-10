@@ -96,41 +96,40 @@
 		</div>
 
 		<!-- <section> -->
-			<img src="top left.png" id="events-top-left" />
-			<img src="events left.svg" id="events-left" />
-			<img src="top right.png" id="events-top-right" />
-			<div id="events">
-
-				<div class="section-heading-container">
-					<button class="btn-rsvp"><span id="rsvp-btn-text">RSVP</span></button>
+		<img src="top left.png" id="events-top-left" />
+		<img src="left.png" id="events-left" />
+		<img src="top right.png" id="events-top-right" />
+		<div id="events">
+			<div class="section-heading-container">
+				<button class="btn-rsvp"><span id="rsvp-btn-text">RSVP</span></button>
+			</div>
+			<div class="section-heading-container">
+				<span>
+					<h2>Wedding Celebrations & Event Flow</h2>
+					<p>
+						Each day holds something special, <br />click to discover the
+						celebration ahead.
+					</p>
+				</span>
+			</div>
+			<div class="event-grid">
+				<div class="event-card" onclick="openPopup('23dec')">
+					<span class="event-date">23<sup>rd</sup></span>
+					<span class="event-text">December</span>
+					<span class="event-text">Events</span>
 				</div>
-				<div class="section-heading-container">
-					<span>
-						<h2>Wedding Celebrations & Event Flow</h2>
-						<p>
-							Each day holds something special, <br />click to discover the
-							celebration ahead.
-						</p>
-					</span>
+				<div class="event-card" onclick="openPopup('24dec')">
+					<span class="event-date">24<sup>th</sup></span>
+					<span class="event-text">December</span>
+					<span class="event-text">Events</span>
 				</div>
-				<div class="event-grid">
-					<div class="event-card" onclick="openPopup('23dec')">
-						<span class="event-date">23<sup>rd</sup></span>
-						<span class="event-text">December</span>
-						<span class="event-text">Events</span>
-					</div>
-					<div class="event-card" onclick="openPopup('24dec')">
-						<span class="event-date">24<sup>th</sup></span>
-						<span class="event-text">December</span>
-						<span class="event-text">Events</span>
-					</div>
-					<div class="event-card" onclick="openPopup('25dec')">
-						<span class="event-date">25<sup>th</sup></span>
-						<span class="event-text">December</span>
-						<span class="event-text">Events</span>
-					</div>
+				<div class="event-card" onclick="openPopup('25dec')">
+					<span class="event-date">25<sup>th</sup></span>
+					<span class="event-text">December</span>
+					<span class="event-text">Events</span>
 				</div>
 			</div>
+		</div>
 		<!-- </section> -->
 
 		<div id="dress-code">
@@ -150,8 +149,9 @@
 				<div class="dress-code-row">
 					<div class="dress-code-event">
 						<h1>Mehendi</h1>
+						<img src="line3.png" id="mehendiUnderline" />
 						<p>
-							Bright colors are highly encouraged! <br />Think fun, festive and
+							Think fun, festive and
 							expressive, multi-color<br />
 							and patterned outfits are welcome.<br />
 							The vibe is dressy-casual, joyful and relaxed.
@@ -160,6 +160,7 @@
 
 					<div class="dress-code-event">
 						<h1>Goye Holud & Mamera</h1>
+						<img src="line3.png" id="mameraUnderline" />
 						<p>
 							Let’s keep it playful and vibrant<br />
 							with bright, cheerful colors.<br />
@@ -170,6 +171,7 @@
 				<div class="dress-code-row">
 					<div class="dress-code-event">
 						<h1>Sangeet</h1>
+						<img src="line3.png" id="sangeetUnderline" />
 						<p>
 							Dress like the gems you are!<br />
 							We’d love to see you in any gemstone<br />
@@ -179,6 +181,7 @@
 					</div>
 					<div class="dress-code-event" id="dress-code-muhrat">
 						<h1>Muhurat</h1>
+							<img src="line3.png" id="muhratUnderline"/>
 						<p>
 							Traditional attire in bright, celebratory<br />colors is
 							encouraged.<br />
@@ -512,7 +515,8 @@
 					<div class="event-title">
 						<span>
 							<img src="haldi.png" style="width: 20%" />
-							<h2>Muhuratam</h2></span>
+							<h2>Muhuratam</h2></span
+						>
 					</div>
 					<div class="event-details right">
 						<p>
