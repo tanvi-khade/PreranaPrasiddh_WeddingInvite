@@ -74,9 +74,9 @@ body {
 
 #landing-bg {
 	/* background-position: right; */
-	background-image: url("couple.jpeg");
+	background-image: url("pp1.png");
 	background-position-x: center;
-	background-position-y: bottom;
+	background-position-y: center;
 	background-repeat: no-repeat;
 	width: 75%;
 	height: 100%;
