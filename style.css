@@ -269,7 +269,6 @@ h2 {
 	justify-content: center;
 	align-content: center;
 	text-align: center;
-	
 }
 .event-date {
 	display: block;
@@ -433,7 +432,7 @@ h2 {
 	background-color: #f4f4f4;
 	min-height: 60vh;
 	padding-left: 5%;
-	width: 100%;
+	/* width: 100%; */
 	padding-bottom: 2em;
 	background-color: #fffaf5;
 	--mask:
@@ -458,11 +457,19 @@ h2 {
 	padding-left: 4em;
 }
 #rsvp-form-wrapper {
-	width: 30%;
+	width: 50%;
 	padding-left: 2em;
 	padding-right: 2em;
 	margin-top: 2em;
 	text-align: center;
+}
+#rsvp-form {
+	margin-left: auto;
+	margin-right: auto;
+}
+#rsvp-form-wrapper iframe {
+	width: 100%;
+	height: 100%;
 }
 
 #countDown-wrapper {
@@ -488,7 +495,6 @@ h2 {
 	top: calc(anchor(top) + 17px);
 }
 
-
 #mehendiUnderline,
 #mameraUnderline,
 #sangeetUnderline,
@@ -509,10 +515,7 @@ footer {
 	font-size: 0.9em;
 	color: #777;
 }
-#rsvp-form {
-	margin-left: auto;
-	margin-right: auto;
-}
+
 input,
 textarea {
 	font-size: medium;
@@ -789,6 +792,8 @@ footer {
 		-webkit-mask: var(--mask);
 		mask: var(--mask);
 		mask: var(--mask);
+		min-height: 150vh;
+		/* overflow-y: auto; */
 	}
 
 	#rsvp-content {
@@ -799,7 +804,14 @@ footer {
 	#rsvp-form-wrapper {
 		padding: 0;
 		padding-right: 2em;
+		width: 100%;
 	}
+
+	#rsvp-form-wrapper iframe {
+		width: 80%;
+		height: 100vh;
+	}
+
 	#footer-left,
 	#footer-right {
 		width: 60%;
