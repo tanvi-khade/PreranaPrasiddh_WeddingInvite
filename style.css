@@ -383,7 +383,7 @@ h2 {
 	width: 35%;
 	bottom: -5em;
 	right: 0;
-	transform: translateX(30%);
+	transform: translateX(38%);
 	z-index: 7;
 	display: flex;
 	align-items: center;
@@ -395,7 +395,7 @@ h2 {
 	position-area: center;
 	left: calc(anchor(left) - 46%); */
 	width: 22%;
-	left: 22%;
+	left: 13%;
 	/* top: 50%; */
 	transform: translateY(-5%);
 	/* transform: translate(-150%, -56%); */
@@ -409,7 +409,7 @@ h2 {
 	width: calc((anchor-size(width) * 0.4));
 	left: calc(anchor(left) - 42%); */
 	width: 42%;
-	left: 25%;
+	left: 16%;
 	/* transform: translate(-50%, 15%); */
 	transform: translateX(-25%);
 	z-index: 8;
@@ -807,7 +807,7 @@ footer {
 		right: 0;
 		bottom: 0;
 		z-index: 7;
-		transform: translate(30%, 40%);
+		transform: translate(38%, 40%);
 		display: flex;
 		align-items: center;
 	}
