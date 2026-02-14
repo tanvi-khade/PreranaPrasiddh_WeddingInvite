@@ -982,7 +982,7 @@ footer {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 800px) {
+@media only screen and (min-width: 769px) and (max-width: 800px) {
 	#landing {
 		/* flex-direction: column-reverse; */
 		height: 105vh;
@@ -1050,7 +1050,7 @@ footer {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 800px) and (max-width: 920px) {
+@media only screen and (min-width: 801px) and (max-width: 920px) {
 	body {
 		font-size: 20px;
 	}
