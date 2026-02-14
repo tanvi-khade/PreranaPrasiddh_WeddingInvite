@@ -889,7 +889,7 @@ footer {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
 	body {
 		font-size: 18px;
 	}
@@ -978,6 +978,13 @@ footer {
 
 	#rsvp-yap {
 		padding-left: 15px;
+	}
+
+	.event-popup-content {
+		padding: 15px;
+		width: 80%;
+		height: 60%;
+		overflow: auto;
 	}
 }
 
