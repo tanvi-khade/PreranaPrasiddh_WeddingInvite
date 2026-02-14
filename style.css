@@ -890,10 +890,13 @@ footer {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	body {
+		font-size: 18px;
+	}
 	#landing {
 		flex-direction: column-reverse;
-		height: 230vh;
+		height: 240vh;
 	}
 	#landing-bg,
 	.side-wave {
@@ -909,6 +912,9 @@ footer {
 		mask: no-mask;
 		width: 100vw;
 		--mask: none;
+		background-position: left;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 	.pill {
 		position: absolute;
@@ -916,10 +922,13 @@ footer {
 		transform: translateX(-50%);
 		top: 52%;
 		/* height: 30%; */
-		width: 70%;
+		width: 58%;
 		/* padding: 134px 20px; */
 		padding-top: 22%;
-		padding-bottom: 22%;
+		padding-bottom: 10%;
+	}
+	.pill p {
+		font-size: 18px;
 	}
 
 	#pill-content {
@@ -931,6 +940,45 @@ footer {
 	}
 	#lastP {
 		margin-bottom: 5em;
+	}
+
+	#events {
+		height: auto;
+	}
+
+	#events-top-left {
+		width: 28%;
+	}
+
+	#events-top-right {
+		width: 15%;
+	}
+
+	.event-grid {
+		/* flex-wrap: wrap; */
+		flex-direction: column;
+		min-height: 100dvh;
+		justify-content: space-evenly;
+		/* height: 120vh; */
+	}
+
+	.event-card {
+		width: 100%;
+		height: 250px;
+	}
+	#venue {
+		height: 110vh;
+	}
+
+	#venue-side-div {
+		width: 75%;
+		/* left: 0; */
+		height: 25%;
+		transform: translate(40%, -20%);
+	}
+
+	#rsvp-yap {
+		padding-left: 15px;
 	}
 }
 
