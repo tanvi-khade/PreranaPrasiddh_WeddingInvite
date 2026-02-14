@@ -219,7 +219,6 @@ h2 {
 }
 .event-grid {
 	padding: 3% 7%;
-	/* display: grid; */
 	justify-content: space-around;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: -11px;
@@ -983,11 +982,140 @@ footer {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+	#landing {
+		/* flex-direction: column-reverse; */
+		height: 105vh;
+	}
+	#landing-bg {
+		width: 55%;
+	}
+	.side-wave {
+		width: 58%;
+	}
+	.pill {
+		height: 70%;
+		width: 40%;
+		padding-top: 11%;
+	}
+	.pill-content {
+		height: 85%;
+	}
+	.pill p {
+		font-size: 13px;
+	}
+
+	#landing-logo {
+		transform: translate(-35%, 10%);
+	}
+
+	.event-grid {
+		padding: 3% 7%;
+		/* display: grid; */
+		justify-content: space-around;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: -11px;
+		display: flex;
+		height: 70%;
+	}
+	.event-date {
+		font-size: 3em;
+	}
+
+	.event-card {
+		width: 25%;
+	}
+	#dress {
+		height: auto;
+	}
+	#venue-side-div {
+		width: 68%;
+		height: 23%;
+	}
+
+	#venue-side-logo {
+		width: 18%;
+	}
+	#venue-text-logo {
+		width: 30%;
+	}
+
+	#guide {
+		padding-top: 10%;
+	}
+
+	#rsvp-yap {
+		padding-left: 1em;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 800px) and (max-width: 920px) {
+	body {
+		font-size: 20px;
+	}
+	#landing {
+		/* flex-direction: column-reverse; */
+		height: 80vh;
+	}
+	#landing-bg {
+		width: 55%;
+	}
+	.side-wave {
+		width: 58%;
+	}
+	.pill {
+		height: 70%;
+		width: 40%;
+		padding-top: 11%;
+	}
+	#landing-logo {
+		transform: translate(-35%, 10%);
+	}
+
+	#events-top-right {
+		width: 17%;
+	}
+	#events-top-left {
+		width: 23%;
+	}
+	#events {
+		height: 65vh;
+	}
+	.event-grid {
+		padding: 3% 7%;
+		/* display: grid; */
+		justify-content: space-around;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: -11px;
+		display: flex;
+		height: 70%;
+	}
+	.event-card {
+		width: 25%;
+	}
+	.event-date {
+		font-size: 3em;
+	}
+
+	#venue-side-div {
+		width: 68%;
+		height: 24%;
+	}
+
+	#venue-side-logo {
+		width: 18%;
+	}
+	#venue-text-logo {
+		width: 30%;
+	}
+	#guide {
+		padding-top: 10%;
+	}
+
+	#rsvp-yap {
+		padding-left: 1em;
+	}
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
