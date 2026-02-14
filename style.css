@@ -1,5 +1,6 @@
 body,
 html {
+	-webkit-overflow-x: hidden;
 	overflow-x: clip;
 }
 
@@ -24,13 +25,13 @@ body {
 
 /*#region nav*/
 .nav {
-	position: sticky;
+	/* position: sticky; */
 	/* width: 100%; */
 	background-color: #ebdacc;
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
-	height: 4em;
+	/* height: 4em; */
 	align-items: center;
 	padding-left: 2em;
 	padding-right: 2em;
@@ -164,10 +165,11 @@ h2 {
 	position: absolute;
 	/* left: -7%;
 	bottom: -4%; */
-	position-anchor: --pill;
-	bottom: calc(anchor(bottom) - 4em);
-	left: anchor(left);
+	/* position-anchor: --pill; */
+	/* bottom: calc(anchor(bottom) - 4em);
+	left: anchor(left); */
 	z-index: 5;
+	left: 0;
 }
 
 /*#endregion */
@@ -195,36 +197,19 @@ h2 {
 	/* transform: translateY(1%); */
 	z-index: 1;
 }
-#events-left {
-	width: max(9%, 5rem);
+
+#events-top-right {
 	position: absolute;
-	position-anchor: --dressCode;
-	left: anchor(left);
-	top: anchor(top);
+	width: max(10%, 6rem);
+	/* position-anchor: --eventsDiv; */
+	position: absolute;
+	/* top: calc(anchor(top) + 1%);
+	right: anchor(right); */
+	top: 121px;
+	right: 0;
 	z-index: 1;
 }
 
-#events-top-right {
-	width: max(10%, 6rem);
-	position-anchor: --eventsDiv;
-	position: absolute;
-	top: calc(anchor(top) + 1%);
-	/* right: calc(anchor(right) - 3%); */
-	right: anchor(right);
-	/* transform: translateX(20%); */
-	z-index: 1;
-}
-#events-right2 {
-	width: max(6%, 4rem);
-	/* height: 14em; */
-	position: absolute;
-	/* margin-top: 75vh; */
-	/* bottom: -5%; */
-	/* margin-left: 88vw; */
-	right: 0;
-	/* transform: translateX(47%); */
-	/* background-color: black; */
-}
 .btn-rsvp {
 	background-color: #d93b59;
 	margin: 5em 0 2em 0;
@@ -297,14 +282,34 @@ h2 {
 	border-radius: 8px;
 }
 
+#dressCode-left {
+	width: max(9%, 5rem);
+	position: absolute;
+	/* position-anchor: --dressCode; */
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+#dressCode-right {
+	width: max(6%, 4rem);
+	/* height: 14em; */
+	position: absolute;
+	/* margin-top: 75vh; */
+	/* bottom: -5%; */
+	/* margin-left: 88vw; */
+	right: 0;
+	/* transform: translateX(47%); */
+	/* background-color: black; */
+}
+
 #dress-code-bottom-right {
 	/* height: 25em; */
 	width: max(20%, 10rem);
 	position: absolute;
-	position-anchor: --dressCode;
-	right: anchor(right);
+	/* position-anchor: --dressCode; */
+	right: 0;
 	/* position-area: center span-inline-end; */
-	bottom: anchor(bottom);
+	bottom: 0;
 	/* margin-top: -10em; */
 	z-index: 5;
 	/* margin-left: 61vw; */
@@ -368,29 +373,45 @@ h2 {
 	background-color: #d93b59;
 	position: absolute;
 	border-radius: 300px;
-	anchor-name: --venueSideDiv;
-	position-anchor: --venue;
-	height: calc(anchor-size(height) * 0.3);
+	/* anchor-name: --venueSideDiv;
+	position-anchor: --venue; */
+	/* height: calc(anchor-size(height) * 0.3);
 	width: calc(anchor-size(width) * 0.35);
 	bottom: calc(anchor(bottom) - 5em);
-	right: calc(anchor(right) - 13%);
+	right: calc(anchor(right) - 13%); */
+	height: 30%;
+	width: 35%;
+	bottom: -5em;
+	right: 0;
+	transform: translateX(30%);
 	z-index: 7;
+	display: flex;
+	align-items: center;
 }
 #venue-side-logo {
 	position: absolute;
-	position-anchor: --venueSideDiv;
+	/* position-anchor: --venueSideDiv;
 	width: calc((anchor-size(width) * 0.22));
 	position-area: center;
-	left: calc(anchor(left) - 46%);
+	left: calc(anchor(left) - 46%); */
+	width: 22%;
+	left: 22%;
+	/* top: 50%; */
+	transform: translateY(-5%);
+	/* transform: translate(-150%, -56%); */
 	z-index: 8;
 }
 
 #venue-text-logo {
 	position: absolute;
-	width: calc((anchor-size(width) * 0.4));
-	position-anchor: --venueSideDiv;
+	/* position-anchor: --venueSideDiv;
 	position-area: center;
-	left: calc(anchor(left) - 42%);
+	width: calc((anchor-size(width) * 0.4));
+	left: calc(anchor(left) - 42%); */
+	width: 42%;
+	left: 25%;
+	/* transform: translate(-50%, 15%); */
+	transform: translateX(-25%);
 	z-index: 8;
 }
 
@@ -476,23 +497,28 @@ h2 {
 	font-family: "Rochester", cursive;
 	margin-top: 6%;
 	margin-bottom: 6%;
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	align-items: center;
 }
 
 #countdown {
 	font-size: 6em;
 	color: #d93b59;
 	font-weight: bold;
-	anchor-name: --countdownDay;
+	/* anchor-name: --countdownDay; */
 }
 
 #countdown-label {
 	/* padding-top: 1.2%; */
 	font-size: 2.1em;
 	font-family: "Playfair Display", serif;
-	position: absolute;
-	position-anchor: --countdownDay;
+	/* position: absolute; */
+	/* position-anchor: --countdownDay;
 	left: calc(anchor(right) + 1%);
-	top: calc(anchor(top) + 17px);
+	top: calc(anchor(top) + 17px); */
+	left: 0;
 }
 
 #mehendiUnderline,
@@ -669,6 +695,7 @@ footer {
 		padding: 0;
 		margin: 0;
 		font-size: large;
+		height: auto;
 	}
 	.nav-left {
 		width: 100%;
@@ -694,7 +721,7 @@ footer {
 
 	#landing {
 		flex-direction: column-reverse;
-		min-height: max(210vh, 2000px);
+		min-height: max(210vh, 2500px);
 	}
 	#landing-bg,
 	.side-wave {
@@ -731,7 +758,7 @@ footer {
 		/* margin-top: 30%; */
 	}
 
-	#events-left {
+	#dressCode-left {
 		transform: translateY(-34%);
 	}
 	.event-grid {
@@ -762,7 +789,7 @@ footer {
 		margin-bottom: 2em;
 	}
 	#venue {
-		height: 125vh;
+		min-height: 125vh;
 	}
 	#venue-details {
 		padding-left: 3em;
@@ -771,13 +798,18 @@ footer {
 	}
 
 	#venue-side-div {
-		height: calc(anchor-size(height) * 0.17);
+		/* height: calc(anchor-size(height) * 0.17);
 		width: calc(anchor-size(width) * 0.9);
-		/* bottom: calc(anchor(bottom) - 1em); */
-		left: calc(anchor(left) + 38%);
+		left: calc(anchor(left) + 38%); 
+		 top: anchor(bottom); */
+		height: 17%;
+		width: 90%;
+		right: 0;
+		bottom: 0;
 		z-index: 7;
-		top: anchor(bottom);
-		transform: translateY(-60%);
+		transform: translate(30%, 40%);
+		display: flex;
+		align-items: center;
 	}
 	#guide {
 		margin-top: 35%;

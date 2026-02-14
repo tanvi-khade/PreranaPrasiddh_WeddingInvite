@@ -8,3 +8,11 @@
 font
 Playfair Display [all content]
 Rochester [just event date number & event name, venue name]
+
+
+
+#e0304d
+#ebdacc - body,nav,venue, guide,event-popup,
+#fdf8f9 - sidewave
+#fffaf5 - dress-code,events 
+#f4f4f4 - rsvp

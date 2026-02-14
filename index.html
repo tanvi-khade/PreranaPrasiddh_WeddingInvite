@@ -7,7 +7,7 @@
 			content="width=device-width, initial-scale=1.0 minimum-scale=1"
 		/>
 		<title>Prerna & Prasiddh Wedding Invitation</title>
-		<link rel="icon" type="image/x-icon" href="logoWhite.png">
+		<link rel="icon" type="image/x-icon" href="logoWhite.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -24,7 +24,7 @@
 		<!-- <link rel="stylesheet" href="responsive.style.css" /> -->
 		<script src="script.js"></script>
 	</head>
-	<body>
+	<body id="home">
 		<div class="nav">
 			<div class="nav-left">
 				<span class="nav-item" id="nav-logo">
@@ -92,15 +92,15 @@
 						new. We’re excited to continue it together, one page at a time.
 					</p>
 				</div>
+				<img src="landing-logo.svg" id="landing-logo" />
 			</div>
-			<img src="landing-logo.svg" id="landing-logo" />
 		</div>
 
 		<!-- <section> -->
-		<img src="top left.png" id="events-top-left" />
-		<img src="left.png" id="events-left" />
-		<img src="top right.png" id="events-top-right" />
+
 		<div id="events">
+			<img src="top left.png" id="events-top-left" />
+			<img src="top right.png" id="events-top-right" />
 			<div class="section-heading-container">
 				<button class="btn-rsvp">
 					<span id="rsvp-btn-text"><a href="#rsvp">RSVP</a></span>
@@ -136,7 +136,9 @@
 		<!-- </section> -->
 
 		<div id="dress-code">
-			<img src="right.png" id="events-right2" />
+			<img src="left.png" id="dressCode-left" />
+			<img src="right.png" id="dressCode-right" />
+
 			<div class="section-heading-container">
 				<span>
 					<h2>Dress Code</h2>
@@ -154,8 +156,7 @@
 						<h1>Mehendi</h1>
 						<img src="line3.png" id="mehendiUnderline" />
 						<p>
-							Think fun, festive and
-							expressive, multi-color<br />
+							Think fun, festive and expressive, multi-color<br />
 							and patterned outfits are welcome.<br />
 							The vibe is dressy-casual, joyful and relaxed.
 						</p>
@@ -184,7 +185,7 @@
 					</div>
 					<div class="dress-code-event" id="dress-code-muhrat">
 						<h1>Muhurat</h1>
-							<img src="line3.png" id="muhratUnderline"/>
+						<img src="line3.png" id="muhratUnderline" />
 						<p>
 							Traditional attire in bright, celebratory<br />colors is
 							encouraged.<br />
@@ -193,8 +194,8 @@
 					</div>
 				</div>
 			</div>
+			<img src="bottom right.png" id="dress-code-bottom-right" />
 		</div>
-		<img src="bottom right.png" id="dress-code-bottom-right" />
 
 		<div id="venue">
 			<div class="section-heading-container">
@@ -228,11 +229,11 @@
 					></iframe>
 				</div>
 			</div>
+			<div id="venue-side-div">
+				<img id="venue-side-logo" src="logoWhite.png" />
+				<img id="venue-text-logo" src="download.svg" />
+			</div>
 		</div>
-
-		<div id="venue-side-div"></div>
-		<img id="venue-side-logo" src="logoWhite.png" />
-		<img id="venue-text-logo" src="download.svg" />
 
 		<div id="guide">
 			<div class="guide-content">
@@ -388,8 +389,7 @@
 						<button id="rsvp-btn" type="submit">Submit</button>
 						<p id="my-form-status"></p>
 					</form> -->
-				<iframe  src="https://forms.gle/aanMD9kJy1zoVxCVA"></iframe>
-				
+					<iframe src="https://forms.gle/aanMD9kJy1zoVxCVA"></iframe>
 				</div>
 			</div>
 		</div>
@@ -411,7 +411,9 @@
 					<div class="event-title">
 						<span>
 							<img src="check-in.png" style="width: 32%" />
-							<span style="display: block; font-size: 22px; font-weight: bold;">Check-in and Social Hour</span>
+							<span style="display: block; font-size: 22px; font-weight: bold"
+								>Check-in and Social Hour</span
+							>
 						</span>
 					</div>
 					<div class="event-details left">
@@ -427,7 +429,9 @@
 					<div class="event-title">
 						<span>
 							<img src="mhendi1.png" style="width: 42%" />
-							<span style="display: block; font-size: 22px; font-weight: bold;">Mehendi</span >
+							<span style="display: block; font-size: 22px; font-weight: bold"
+								>Mehendi</span
+							>
 						</span>
 					</div>
 					<div class="event-details right">
@@ -451,7 +455,9 @@
 					<div class="event-title">
 						<span>
 							<img src="haldi.png" style="width: 52%" />
-							<span  style="display: block; font-size: 22px; font-weight: bold;">Gaye Holud</span>
+							<span style="display: block; font-size: 22px; font-weight: bold"
+								>Gaye Holud</span
+							>
 						</span>
 					</div>
 					<div class="event-details left">
@@ -468,7 +474,9 @@
 					<div class="event-title">
 						<span>
 							<img src="mamera.png" style="width: 42%" />
-							<span  style="display: block; font-size: 22px; font-weight: bold;">Mamera</span></span
+							<span style="display: block; font-size: 22px; font-weight: bold"
+								>Mamera</span
+							></span
 						>
 					</div>
 					<div class="event-details right">
@@ -485,7 +493,9 @@
 					<div class="event-title">
 						<span>
 							<img src="sangeet.jpg.jpeg" style="width: 42%" />
-							<span  style="display: block; font-size: 22px; font-weight: bold;">Sangeet</span></span
+							<span style="display: block; font-size: 22px; font-weight: bold"
+								>Sangeet</span
+							></span
 						>
 					</div>
 					<div class="event-details left">
@@ -508,7 +518,9 @@
 					<div class="event-title">
 						<span>
 							<img src="baraat1.png" style="width: 55%" />
-							<span  style="display: block; font-size: 22px; font-weight: bold;">Baraat</span>
+							<span style="display: block; font-size: 22px; font-weight: bold"
+								>Baraat</span
+							>
 						</span>
 					</div>
 					<div class="event-details left">
@@ -527,7 +539,9 @@
 					<div class="event-title">
 						<span>
 							<img src="Varmala.png" style="width: 53%" />
-							<span  style="display: block; font-size: 22px; font-weight: bold;">Muhuratam</span></span
+							<span style="display: block; font-size: 22px; font-weight: bold"
+								>Muhuratam</span
+							></span
 						>
 					</div>
 					<div class="event-details right">
