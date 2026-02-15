@@ -105,7 +105,7 @@ body {
 }
 .pill {
 	color: #e2d9cc;
-	background-color: #d93b59;
+	background-color: #e0304d;
 	width: 25%;
 	/* padding: 8em 1.7em; */
 	border-radius: 280px;
@@ -211,7 +211,7 @@ h2 {
 }
 
 .btn-rsvp {
-	background-color: #d93b59;
+	background-color: #e0304d;
 	margin: 5em 0 2em 0;
 	width: 11em;
 	height: 6em;
@@ -369,7 +369,7 @@ h2 {
 }
 
 #venue-side-div {
-	background-color: #d93b59;
+	background-color: #e0304d;
 	position: absolute;
 	border-radius: 300px;
 	/* anchor-name: --venueSideDiv;
@@ -464,7 +464,7 @@ h2 {
 	mask: var(--mask);
 }
 #rsvp h2 {
-	color: #d93b59;
+	color: #e0304d;
 	margin-top: 0;
 }
 #rsvp-content {
@@ -504,7 +504,7 @@ h2 {
 
 #countdown {
 	font-size: 6em;
-	color: #d93b59;
+	color: #e0304d;
 	font-weight: bold;
 	/* anchor-name: --countdownDay; */
 }
@@ -562,7 +562,7 @@ button {
 #rsvp-btn {
 	display: block;
 	background-color: #fbf8f8;
-	color: #d93b59;
+	color: #e0304d;
 	padding: 1em;
 	border: none;
 	border-radius: 4px;
@@ -578,7 +578,7 @@ button {
 	font-weight: bold;
 }
 #rsvp-btn:hover {
-	background-color: #d93b59;
+	background-color: #e0304d;
 	color: #fbf8f8;
 }
 
@@ -607,7 +607,7 @@ button {
 .event-popup-content {
 	background-color: #ebdacc;
 	/* margin: 15% auto; */ /* 15% from the top and centered */
-	padding: 3em 5em;
+	/* padding: 2em 2em; */
 	border: 1px solid #888;
 	width: 50%; /* Could be more or less, depending on screen size */
 	border-radius: 1em;
@@ -656,6 +656,7 @@ button {
 	font-weight: bold;
 	margin: 10px;
 	text-align: right;
+	padding-right: 15px;
 }
 
 .close:hover,
@@ -697,10 +698,11 @@ footer {
 	width: 52%
 }
 #mamera{
-	width: 42%
+	width: 68%;
 }
 #sangeet{
-	width: 42%
+	width: 65%;
+	image-orientation: inherit;
 }
 #baraat{
 	width: 55%

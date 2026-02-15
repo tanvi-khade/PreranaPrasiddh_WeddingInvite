@@ -16,3 +16,4 @@ Rochester [just event date number & event name, venue name]
 #fdf8f9 - sidewave
 #fffaf5 - dress-code,events 
 #f4f4f4 - rsvp
+#a0522d - title color
