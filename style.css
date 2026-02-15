@@ -687,6 +687,28 @@ footer {
 	top: 0;
 }
 
+#luggage{
+	width: 32%
+}
+#mehendi{
+	width: 42%
+}
+#haldi{
+	width: 52%
+}
+#mamera{
+	width: 42%
+}
+#sangeet{
+	width: 42%
+}
+#baraat{
+	width: 55%
+}
+#varmala{
+	width: 53%
+}
+
 @media only screen and (max-width: 600px) {
 	.nav {
 		display: flex;
